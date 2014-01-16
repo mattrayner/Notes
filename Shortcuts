@@ -1,0 +1,67 @@
+##########################
+## Setting up shortcuts ##
+##########################
+
+# Sortcuts allow you to run quick commands such as
+# .. (cd ..)
+# or custom commands such as:
+# . . (go to working directory)
+# . dtp (go to desktop
+# sscf (Save shortcut config files)
+
+
+
+## HOW TO SET IT UP
+
+# Pull the Notes repo from GIT
+# open up bashrc.backup & bash_profile.backup
+
+# Use common sense to pull the bits you need and place
+# them into ~/.bashrc and ~/bash_profile
+
+# You may need to edit the contents of these two to make
+# them user specific
+
+
+
+## HOW TO ADD SHORTCUTS
+
+# From within the Notes repo folder open shortcuts.sh
+# append to the
+#
+# if [ $1 = "." ]then;
+#     cd ~/bPlanHQ/
+# elif [ $1 = "dtp" ]then;
+#     cd ~/Desktop/
+# fi
+#
+# Then you will be able to reference your new shortcuts
+# right away!
+# 
+# $ . myshortcut
+
+
+
+## WHAT ABOUT NEW COMMANDS
+
+# So you want to add new commands?
+#
+# All you need to do is add a new alias to ~/.bashrc
+# 
+# myInDepthFunction() {
+#     # Do something
+#     cd /opt/folder
+# }
+# alias idf=myInDepthFunction
+#
+# The above will execute all of the code inide of myInDepthFunction
+# when you type 'idf' into the shell
+#
+# $ idf
+#
+# For simpler commands you can write the command directly into alias
+#
+# alias simplecommand = "sh ~/Notes/somescript.sh"
+#
+# --- NOTE: If you want to pass arguments you need to do it the
+#     function way ---

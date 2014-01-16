@@ -1,0 +1,18 @@
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#quick cd up
+alias ..='cd ..'
+
+#Execute our shortcuts file with parameters passed
+shortcut() {
+    source ~/Notes/shortcuts.sh $1 $2
+}
+alias .=shortcut
+
+#Save our current .bashrc and .bash_profile files
+saveShortcutConfigFiles() {
+    cp -v ~/.bashrc ~/Notes/bashrc.backup
+    cp -v ~/.bash_profile ~/Notes/bash_profile.backup
+}
+alias sscf=saveShortcutConfigFiles

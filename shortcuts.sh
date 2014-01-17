@@ -8,20 +8,16 @@ elif [ $1 = "save" ];then
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
-elif [ $1 = "stl" ];then
-    elinks /usr/share/doc/stl-manual/html/stl_index.html
 elif [ $1 = "dtp" ];then
     cd ~/Desktop/
 elif [ $1 = "nts" ];then
     cd ~/Notes
 elif [ $1 = "update" ];then
-    nano ~/Notes/shortcuts.sh
+    emacs ~/Notes/shortcuts.sh
 elif [ $1 = "rc" ];then
-    nano ~/.bashrc
+    emacs ~/.bashrc
 elif [ $1 = "profile" ];then
-    nano ~/.bash_profile
-elif [ $1 = "~" ];then
-    cd ~
+    emacs ~/.bash_profile
 elif [ $1 = "dld" ];then
     cd ~/Downloads/
 elif [ $1 = "doc" ];then

@@ -10,18 +10,6 @@ shortcut() {
 }
 alias .=shortcut
 
-#Save our current .bashrc and .bash_profile files
-saveShortcutConfigFiles() {
-    cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
-    cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup
-}
-
-#Restore backed up shortcut files
-restoreShortcutConfigFiles() {
-    cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
-    cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
-}
-
 function extract()      # Handy Extract Program
 {
     if [ -f $1 ] ; then
@@ -74,3 +62,12 @@ function ii()   # Get current host related info.
 }
 
 alias restart='sudo shutdown -r now'
+
+#Launch a url in chrome using this helper function
+function chrome() {
+    if [ -z "$1" ]; then
+        echo "chrome: Please supply a web address"
+    else
+        /usr/bin/open -a "/Applications/Google Chrome.app" "$@"
+    fi
+}

@@ -8,6 +8,21 @@ elif [ $1 = "save" ];then
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
+elif [ $1 = "pull" ];then
+    . nts
+    git pull
+    . restore
+elif [ $1 = "push" ];then
+    echo "Give a commit message:"
+    read -e MESSAGE
+    . save
+    . nts
+    git add .
+    git commit -m "$MESSAGE"
+    git push
+elif [ $1 = "status" ];then
+    . nts
+    git status
 elif [ $1 = "dtp" ];then
     cd ~/Desktop/
 elif [ $1 = "nts" ];then

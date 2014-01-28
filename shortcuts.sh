@@ -2,6 +2,21 @@
 
 if [ $1 = "." ];then
     cd ~/bPlanHQ/
+
+    #Check to see if we are doing something with our project
+    if (( $# >= 2 ))
+    then
+	#Launch Server
+	if [ $2 = "." ]; then
+	    rails s
+	#Remove and restart the database
+	elif [ $2 = "reset" ];then
+	    rake db:drop
+	    rake db:create
+	    rake db:migrate
+	    rake db:seed
+	fi
+    fi
 elif [ $1 = "save" ];then
     cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
     cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup

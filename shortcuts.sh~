@@ -9,17 +9,54 @@ elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
 elif [ $1 = "pull" ];then
+    echo "======================"
+    echo "== Pulling from git =="
+    echo "======================"
+    echo "= Change Directory   ="
     . nts
+    echo "======================"
+    echo "=  Pulling...        ="
+    echo ""
     git pull
+    echo ""
+    echo "======================"
+    echo "= Overwriting files  ="
+    echo ""
     . restore
+    echo ""
+    echo "======================"
 elif [ $1 = "push" ];then
-    echo "Give a commit message:"
+    echo "======================"
+    echo "== Pushing to git   =="
+    echo "======================"
+    echo "= Commit message:    ="
+    echo ""
     read -e MESSAGE
+    echo ""
+    echo "====================="
+    echo "= Saving files...   ="
+    echo ""
     . save
+    echo ""
+    echo "====================="
+    echo "= Changing dir...   ="
     . nts
+    echo "====================="
+    echo "= Adding files...   ="
+    echo ""
     git add .
+    echo ""
+    echo "====================="
+    echo "= Commiting files.. ="
+    echo ""
     git commit -m "$MESSAGE"
+    echo ""
+    echo "====================="
+    echo "= Pushing commit... ="
+    echo ""
     git push
+    echo ""
+    echo "====================="
 elif [ $1 = "status" ];then
     . nts
     git status

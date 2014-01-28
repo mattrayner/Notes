@@ -30,9 +30,7 @@ elif [ $1 = "push" ];then
     echo "== Pushing to git   =="
     echo "======================"
     echo "= Commit message:    ="
-    echo ""
     read -e MESSAGE
-    echo ""
     echo "====================="
     echo "= Saving files...   ="
     echo ""
@@ -43,9 +41,7 @@ elif [ $1 = "push" ];then
     . nts
     echo "====================="
     echo "= Adding files...   ="
-    echo ""
     git add .
-    echo ""
     echo "====================="
     echo "= Commiting files.. ="
     echo ""

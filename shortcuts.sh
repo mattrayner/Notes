@@ -9,54 +9,9 @@ elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
 elif [ $1 = "pull" ];then
-    CURRENTPATH=$(pwd)
-    echo "======================"
-    echo "== Pulling from git =="
-    echo "======================"
-    echo "= Change Directory   ="
-    . nts
-    echo "======================"
-    echo "=  Pulling...        ="
-    echo ""
-    git pull
-    echo ""
-    echo "======================"
-    echo "= Overwriting files  ="
-    echo ""
-    . restore
-    echo ""
-    echo "======================"
-    cd $CURRENTPATH
+    source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then
-    CURRENTPATH=$(pwd)
-    echo "======================"
-    echo "== Pushing to git   =="
-    echo "======================"
-    echo "= Commit message:    ="
-    read -e MESSAGE
-    echo "====================="
-    echo "= Saving files...   ="
-    echo ""
-    . save
-    echo ""
-    echo "====================="
-    echo "= Changing dir...   ="
-    . nts
-    echo "====================="
-    echo "= Adding files...   ="
-    git add .
-    echo "====================="
-    echo "= Commiting files.. ="
-    echo ""
-    git commit -m "$MESSAGE"
-    echo ""
-    echo "====================="
-    echo "= Pushing commit... ="
-    echo ""
-    git push
-    echo ""
-    echo "====================="
-    cd $CURRENTPATH
+    source ~/Notes/helper/push.sh
 elif [ $1 = "status" ];then
     . nts
     git status

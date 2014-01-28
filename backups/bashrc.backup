@@ -15,7 +15,7 @@ alias .=shortcut
 
 function extract()      # Handy Extract Program
 {
-    if [ -f $1 ] ; then
+    if [ -f $1 ]; then
         case $1 in
             *.tar.bz2)   tar xvjf $1     ;;
             *.tar.gz)    tar xvzf $1     ;;
@@ -42,10 +42,19 @@ function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 # Create a ZIP archive of a file or folder.
 function makezip() { zip -r "${1%%/}.zip" "$1" ; }
 
-function my_ip() # Get IP adress on ethernet.
+function my_ip() # Get IP adress on WiFi.
+{
+    MY_IP=$(/sbin/ifconfig en0 | awk '/inet/ { print $2 } ' | 
+	sed -e s/addr://)
+
+    echo ${MY_IP:-"Not connected"}
+}
+
+function my_lan_ip() # Get IP address on Ethernet.
 {
     MY_IP=$(/sbin/ifconfig eth0 | awk '/inet/ { print $2 } ' |
-      sed -e s/addr://)
+        sed -e s/addr://)
+
     echo ${MY_IP:-"Not connected"}
 }
 

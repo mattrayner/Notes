@@ -35,4 +35,6 @@ elif [ $1 = "doc" ];then
     cd ~/Documents/
 elif [ $1 = "yelp" ];then
     chrome 'http://yelp.co.uk'
+elif [ $1 = "facebook" ];then
+    chrome 'http://facebook.com'
 fi

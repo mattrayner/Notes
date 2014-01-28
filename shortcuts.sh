@@ -13,8 +13,10 @@ elif [ $1 = "pull" ];then
 elif [ $1 = "push" ];then
     source ~/Notes/helper/push.sh
 elif [ $1 = "status" ];then
+    CURRENTDIR=$(pwd)
     . nts
     git status
+    cd $CURRENTDIR
 elif [ $1 = "dtp" ];then
     cd ~/Desktop/
 elif [ $1 = "nts" ];then

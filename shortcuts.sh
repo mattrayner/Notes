@@ -9,6 +9,7 @@ elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
 elif [ $1 = "pull" ];then
+    CURRENTPATH=$(pwd)
     echo "======================"
     echo "== Pulling from git =="
     echo "======================"
@@ -25,7 +26,9 @@ elif [ $1 = "pull" ];then
     . restore
     echo ""
     echo "======================"
+    cd $CURRENTPATH
 elif [ $1 = "push" ];then
+    CURRENTPATH=$(pwd)
     echo "======================"
     echo "== Pushing to git   =="
     echo "======================"
@@ -53,6 +56,7 @@ elif [ $1 = "push" ];then
     git push
     echo ""
     echo "====================="
+    cd $CURRENTPATH
 elif [ $1 = "status" ];then
     . nts
     git status

@@ -1,8 +1,11 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-#quick cd up
+#Quick cd up
 alias ..='cd ..'
+
+#Quick terminal clear
+alias cls='clear'
 
 #Execute our shortcuts file with parameters passed
 shortcut() {

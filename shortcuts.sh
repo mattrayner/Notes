@@ -20,7 +20,7 @@ elif [ $1 = "rc" ];then
     nano ~/.bashrc
 elif [ $1 = "profile" ];then
     nano ~/.bash_profile
-elif [ $1 = "~" ];then
+elif [ $1 = "," ];then
     cd ~
 elif [ $1 = "dld" ];then
     cd ~/Downloads/

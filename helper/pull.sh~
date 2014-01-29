@@ -7,7 +7,7 @@ echo "======================"
 echo "= Change Directory   ="
 . nts
 echo "======================"
-echo "= Pulling...         ="
+echo "=  Pulling...        ="
 PULLRESULT=$(git pull)
 echo "======================"
 if [ "$PULLRESULT" != "Already up-to-date." ]; then

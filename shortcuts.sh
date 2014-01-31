@@ -15,6 +15,20 @@ if [ $1 = "." ];then
 	    rake db:create
 	    rake db:migrate
 	    rake db:seed
+	elif [ $2 = "pull" ];then
+	    echo "==== PULL 'bPanHQ' ===="
+	    echo "LOCAL GIT STATUS:"
+	    echo
+            git status
+	    echo
+	    read -p "Continue pull? (Yy): " -n 1 -r
+	    echo    # (optional) move to a new line
+	    if [[ $REPLY =~ ^[Yy]$ ]];then
+                git pull
+            else
+                echo "NO PULL"
+            fi
+	    echo
 	fi
     fi
 elif [ $1 = "save" ];then

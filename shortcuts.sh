@@ -25,10 +25,31 @@ if [ $1 = "." ];then
 	    echo    # (optional) move to a new line
 	    if [[ $REPLY =~ ^[Yy]$ ]];then
                 git pull
+		BPULLRESULT=TRUE
             else
                 echo "NO PULL"
+		BPULLRESULT=FALSE
             fi
 	    echo
+	elif [ $2 = "push" ];then
+	    echo "==== PUSH 'bPlanHQ' ===="
+	    echo "PULL FIRST:"
+            echo
+	    . . pull
+	    echo
+	    if [[ $BPULLRESULT = TRUE ]];then
+		echo "ADDING:"
+		git add .
+		read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
+		echo
+		git commit -m "$COMMITMESSAGE"
+		echo "PUSHING:"
+		echo
+		git push
+		echo
+		echo "DONE"
+		echo
+	    fi
 	fi
     fi
 elif [ $1 = "save" ];then

@@ -9,6 +9,9 @@ if [ $1 = "." ];then
 	#Launch Server
 	if [ $2 = "." ]; then
 	    rails s
+	#Migrate the project database
+	elif [ $2 = "migrate" ]; then
+	    rake db:migrate
 	#Remove and restart the database
 	elif [ $2 = "reset" ];then
 	    rake db:drop

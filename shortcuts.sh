@@ -91,5 +91,5 @@ elif [ $1 = "yelp" ];then
 elif [ $1 = "facebook" ];then
     chrome 'http://facebook.com'
 elif [ $1 = "showdown" ];then
-    sudo shudown -h now
+    sudo shutdown -h now
 fi

@@ -1,0 +1,166 @@
+#######################################
+# Guide to install LAMP and WordPress #
+#                                     #
+# OS: Ubuntu 13.10 (Saucy Salamander) #
+# WordPress: 25/2/2014                #
+#######################################
+#Update packages
+sudo apt-get update
+sudo apt-get upgrade
+
+#Install Apache2
+sudo apt-get install apache2
+
+#############################################
+# Check it wored: http://server-ip-address/ #
+#############################################
+
+#Install MySQL
+sudo apt-get install mysql-server mysql-client
+
+#Check it's running
+sudo service mysql status
+
+#####################################
+# Should output something like:     #
+# mysql start/running, process 3901 #
+#####################################
+
+#Install PHP
+sudo apt-get install php5 php5-mysql libapache2-mod-php5
+
+##################################################
+# Test that PHP is running correctly by creating #
+# a test php file:                               #
+#                                                #
+# sudo nano /var/www/testphp.php                 #
+#                                                #
+# With the contents:                             #
+# <?php phpinfo(); ?>                            #
+#                                                #
+# Now restart Apache to ensure php is loaded:    #
+# sudo service apache2 restart                   #
+#                                                #
+# The visit http://server-ip-address/testphp.php #
+# you should have a large output of php install  #
+# data.                                          #
+##################################################
+
+#Install PHPMyAdmin for easy database management
+sudo apt-get install phpmyadmin
+
+###########################################
+# NOTE: choose apache2 webserver and say  #
+# !!!! NO !!!! to 'Configure database for #
+# phpmyadmin with dbconfig-common?'       #
+###########################################
+
+#Once installed run this to get it running:
+sudo sh -c 'echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf' && sudo service apache2 restart
+
+#################################################
+# Now visit http://server-ip-address/phpmyadmin #
+#                                               #
+# Log in using the details you created earlier  #
+#                                               #
+#  -  Click on 'Users' then 'Add User'          #
+#  -  Give your user a name i.e. 'wordpress'    #
+#  -  Next to host choole 'Local' from the      #
+#     drop down                                 #
+#  -  Choose a password (should be STRONG)      #
+#  -  Choose the options                        #
+#     'Create database with same name' and      #
+#     'Grant all priviliges'                    #
+#  -  Click on 'Go'                             #
+#################################################
+
+#Download the latest version of WordPress
+cd && wget http://wordpress.org/latest.tar.gz
+
+#Uncompress it
+tar -xzvf latest.tar.gz 
+
+#Set up the WordPress configuration file - copy then edit
+cd && cp wordpress/wp-config-sample.php wordpress/wp-config.php
+nano wordpress/wp-config.php
+
+#########################################################################
+# // ** MySQL settings – You can get this info from your web host ** // #
+# /** The name of the database for WordPress */                         #
+# define(‘DB_NAME’, ‘wordpress‘);                                       #
+#                                                                       #
+# /** MySQL database username */                                        #
+# define(‘DB_USER’, ‘wordpress‘);                                       #
+#                                                                       #
+# /** MySQL database password */                                        #
+# define(‘DB_PASSWORD’, ‘!!!!!PASSWORD!!!!!');                          #
+#########################################################################
+
+# Place the WordPress files into the apache directory
+cd && sudo rsync -avP wordpress/ /var/www/
+
+# Give the current user write access to the directory (makes uploading 
+# files over SFTP easy)
+cd /var/www/
+sudo chown USERNAME:USERNAME * -R 
+sudo usermod -a -G USERNAME USERNAME
+
+# Now we need to change the apache user to the current user too so that
+# Apache can access the directory we want
+sudo nano /etc/apache2/envvars
+
+#####################################
+# Replace:                          #
+# export APACHE_RUN_USER=www-data   #
+# export APACHE_RUN_GROUP=www-data  #
+#                                   #
+# With:                             #
+# #export APACHE_RUN_USER=www-data  #
+# export APACHE_RUN_USER=USERNAME   #
+# #export APACHE_RUN_GROUP=www-data #
+# export APACHE_RUN_GROUP=USERNAME  #
+#####################################
+
+#Restart apache
+sudo service apache2 restart
+
+#Install WordPress http://server-ip-address/wp-admin/install.php
+
+#Once done, edit dir.conf to ensure PHP files are given priority
+sudo vi /etc/apache2/mods-enabled/dir.conf
+
+###################################################
+# You will see a line of index files (index.html, #
+# index.php, index.cgi, etc) under the            #
+# DirectoryIndex setting. Add index.php as the    #
+# first item in the list.                         #
+###################################################
+
+#Restart apache again
+sudo service apache2 restart
+
+###################################################
+# IF YOU WOULD LIKE TO USE PRETTY PERMALINKS I.E. #
+# http://server-ip-address/my-category/my-post    #
+#                                                 #
+# We need to allow mod_rewrite within Apache      #
+#                                                 #
+# sudo nano /etc/apache2/apache2.conf             #
+#                                                 #
+# Find this part of the file:                     #
+# <Directory /var/www/>                           #
+#        Options Indexes FollowSymLinks           #
+#        AllowOverride all                        #
+#        Require all granted                      #
+# </Directory>                                    #
+#                                                 #
+# Ensure that the AllowOverride line reads:       #
+# AllowOverride all                               #
+#                                                 #
+# Restart Apache:                                 #
+# sudo service apache2 restart                    #
+#                                                 #
+# Now that we know Apache allows overrides you    #
+# should be able to set up permalinks within      #
+# WordPress.                                      #
+###################################################

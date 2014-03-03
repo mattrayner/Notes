@@ -39,6 +39,7 @@ if [ $1 = "." ];then
 	    echo "PULL FIRST:"
             echo
 	    . . pull
+
 	    echo
 	    if [[ $BPULLRESULT = TRUE ]];then
 		echo "ADDING:"
@@ -55,6 +56,10 @@ if [ $1 = "." ];then
 	    fi
 	fi
     fi
+elif [ $1 = "plan" ];then
+    osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "Terminal" to do script ". . ." in selected tab of front window'
+    sleep 5s
+    chrome "http://0.0.0.0:3344/"
 elif [ $1 = "save" ];then
     cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
     cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup

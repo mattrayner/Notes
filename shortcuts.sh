@@ -43,7 +43,7 @@ if [ $1 = "." ];then
 	    echo
 	    if [[ $BPULLRESULT = TRUE ]];then
 		echo "ADDING:"
-		git add .
+		git add . -A
 		read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
 		echo
 		git commit -m "$COMMITMESSAGE"
@@ -54,6 +54,9 @@ if [ $1 = "." ];then
 		echo "DONE"
 		echo
 	    fi
+        elif [ $2 = "deploy" ];then
+	    git push live
+	    cap deploy
 	fi
     fi
 elif [ $1 = "plan" ];then

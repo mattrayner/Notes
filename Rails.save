@@ -24,12 +24,10 @@ sudo port -v selfupdate
 #If there are any updates, run the upgradee command
 
 #Check for and install RVM requirements
+#########################################
+# SEE RVM NOTE FOR INSTALL INSTRUCTIONS #
+#########################################
 rvm requirements
-
-########################################
-# IF NO RVM:                           #
-# \curl -sSL https://get.rvm.io | bash #
-########################################
 
 #Now that RVM is set up, install the required version of Ruby
 rvm get stable --autolibs=enable

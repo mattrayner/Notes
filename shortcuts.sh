@@ -14,7 +14,26 @@ if [ $1 = "." ];then
 	    rake db:migrate
 	#Remove and restart the database
 	elif [ $2 = "reset" ];then
-	    rake db:drop && rake db:create && rake db:migrate RAILS_ENV=test && rake db:migrate & rake db:seed
+	    echo "Dropping Database...."
+	    rake db:drop
+	    echo "Done"
+	    echo "====================="
+	    echo "Creating Database..."
+            rake db:create
+	    echo "Done"
+            echo "====================="
+	    echo "Migrating for test..."
+	    rake db:migrate RAILS_ENV=test
+	    echo "Done"
+            echo "====================="
+	    echo "Migrating development..."
+	    rake db:migrate
+	    echo "Done"
+            echo "====================="
+	    echo "Seeding database..."
+	    rake db:seed
+	    echo "Done"
+            echo "====================="
 	elif [ $2 = "pull" ];then
 	    echo "==== PULL 'bPanHQ' ===="
 	    echo "LOCAL GIT STATUS:"

@@ -36,3 +36,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
 export MAVEN_OPTS="-XX:PermSize=256M -XX:MaxPermSize=512M -Xmx1024m"
+
+MYSQL=/usr/local/mysql/bin
+export PATH=$PATH:$MYSQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH

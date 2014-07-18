@@ -34,6 +34,22 @@ if [ $1 = "." ];then
 	    rake db:seed
 	    echo "Done"
             echo "====================="
+	elif [ $2 = "production" ];then
+	    echo "Drop database"
+	    RAILS_ENV=production rake db:drop
+	    echo "Done"
+	    echo "Create database"
+	    RAILS_ENV=production rake db:create
+	    echo "Done"
+	    echo "Migrate database"
+	    RAILS_ENV=production rake db:migrate
+	    echo "Done"
+	    echo "Seed database"
+	    RAILS_ENV=production rake db:seed
+	    echo "Done"
+	    echo "Launcinh server"
+	    rails s -e production
+	    echo "Done"
 	elif [ $2 = "pull" ];then
 	    echo "==== PULL 'bPanHQ' ===="
 	    echo "LOCAL GIT STATUS:"
@@ -120,4 +136,31 @@ elif [ $1 = "facebook" ];then
     chrome 'http://facebook.com'
 elif [ $1 = "showdown" ];then
     sudo shutdown -h now
+elif [ $1 = "nuke" ];then
+    if [ $2 = "mysql" ]; then
+	echo "Nuking MySQL..."
+	brew uninstall mysql
+	sudo rm /usr/local/mysql
+	sudo rm -rf /usr/local/mysql*
+	sudo rm -rf /usr/local/var/mysql
+	sudo rm -rf /usr/local/var/mysql*
+	sudo rm -rf /Library/StartupItems/MySQLCOM
+	sudo rm -rf /Library/PreferencePanes/My*
+	sudo rm -rf /Library/Receipts/mysql*
+	sudo rm -rf /Library/Receipts/MySQL*
+	sudo rm -rf /var/db/receipts/com.mysql.*
+	echo "Done"
+        echo "====================="
+	echo "Re-building"
+	brew update
+	brew install mysql
+	unset TMPDIR
+	mkdir /usr/local/var/
+	mkdir /usr/local/var/mysql
+	mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+	mysql.server start
+	mysqladmin -u root password ''
+	echo "Done"
+        echo "====================="
+    fi
 fi

@@ -47,7 +47,10 @@ if [ $1 = "." ];then
 	    echo "Seed database"
 	    RAILS_ENV=production rake db:seed
 	    echo "Done"
-	    echo "Launcinh server"
+	    echo "Precompile Assets"
+	    RAILS_ENV=production rake assets:precompile
+	    echo "Done"
+	    echo "Launcing server"
 	    rails s -e production
 	    echo "Done"
 	elif [ $2 = "pull" ];then

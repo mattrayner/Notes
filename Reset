@@ -1,0 +1,3 @@
+# For testing - reset a Devise user password to 'Password' if someone accidentally changes it (I'm looking at you - QA'ers)
+UPDATE users SET encrypted_password = "$2a$10$/eZcUyUJFhdjCIieK3FKc.sGDKxICV6K9BHwNgw010CHmRr/4kZ66" WHERE email = "***EMAIL***";
+

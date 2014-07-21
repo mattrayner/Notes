@@ -1,2 +1,0 @@
-UPDATE users SET encrypted_password = "$2a$10$/eZcUyUJFhdjCIieK3FKc.sGDKxICV6K9BHwNgw010CHmRr/4kZ66" WHERE email = "admin@example.com";
-

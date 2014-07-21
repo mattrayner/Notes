@@ -53,6 +53,14 @@ if [ $1 = "." ];then
 	    echo "Launcing server"
 	    rails s -e production
 	    echo "Done"
+	elif [ $2 = "rspec" ];then
+	    if [ -z "$3" ];then
+		echo "Launching RSPEC"
+		rspec
+	    else
+		echo "Launching RSPEC with $3"
+		rspec $3
+	    fi
 	elif [ $2 = "pull" ];then
 	    echo "==== PULL 'bPanHQ' ===="
 	    echo "LOCAL GIT STATUS:"

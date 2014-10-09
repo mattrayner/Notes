@@ -15,23 +15,23 @@ if [ $1 = "." ];then
 	#Remove and restart the database
 	elif [ $2 = "reset" ];then
 	    echo "Dropping Database...."
-	    rake db:drop
+	    rake db:drop --trace
 	    echo "Done"
 	    echo "====================="
 	    echo "Creating Database..."
-            rake db:create
+            rake db:create --trace
 	    echo "Done"
             echo "====================="
 	    echo "Migrating for test..."
-	    rake db:migrate RAILS_ENV=test
+	    rake db:migrate RAILS_ENV=test --trace
 	    echo "Done"
             echo "====================="
 	    echo "Migrating development..."
-	    rake db:migrate
+	    rake db:migrate --trace
 	    echo "Done"
             echo "====================="
 	    echo "Seeding database..."
-	    rake db:seed
+	    rake db:seed --trace
 	    echo "Done"
             echo "====================="
 	elif [ $2 = "production" ];then
@@ -113,9 +113,11 @@ elif [ $1 = "plan" ];then
 elif [ $1 = "save" ];then
     cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
     cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup
+    cp -v ~/.vimrc ~/Notes/backups/vimrc.backup
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
+    cp -v ~/Notes/backups/vimrc.backup ~/.vimrc
 elif [ $1 = "pull" ];then
     source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then
@@ -130,11 +132,13 @@ elif [ $1 = "dtp" ];then
 elif [ $1 = "nts" ];then
     cd ~/Notes
 elif [ $1 = "update" ];then
-    emacs ~/Notes/shortcuts.sh
+    vim ~/Notes/shortcuts.sh
 elif [ $1 = "rc" ];then
-    emacs ~/.bashrc
+    vim ~/.bashrc
 elif [ $1 = "profile" ];then
-    emacs ~/.bash_profile
+    vim ~/.bash_profile
+elif [ $1 = "vimrc" ];then
+    vim ~/.vimrc
 elif [ $1 = "," ];then
     cd ~
 elif [ $1 = "dld" ];then

@@ -97,7 +97,12 @@ elif [ $1 = "start" ];then
     sleep 10
     chrome "http://local.nature.com/"
 elif [ $1 = "rspec" ];then
-    be rspec
+    if (( $# >= 2 ))
+    then
+        be rspec $2
+    else
+        be rspec
+    fi
 
     SHORTCUTRSPECSTATUS=$?
 
@@ -129,7 +134,7 @@ elif [ $1 = "rspec" ];then
     echo "========================" 
 elif [ $1 = "test" ];then
 	# Wipe the teminal buffer
-	osascript -e 'tell application "System Events" to keystroke "k" using command down'
+	k
 	
     be rspec
     SHORTCUTRSPECSTATUS=$?

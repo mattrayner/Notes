@@ -8,6 +8,9 @@ alias ..='cd ..'
 #Quick terminal clear
 alias cls='clear'
 
+#Kill the terminal's buffer
+alias k="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
+
 #Execute our shortcuts file with parameters passed
 shortcut() {
     source ~/Notes/shortcuts.sh $1 $2

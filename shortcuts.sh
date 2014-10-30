@@ -6,126 +6,107 @@ if [ $1 = "." ];then
     #Check to see if we are doing something with our project
     if (( $# >= 2 ))
     then
-	#Launch Server
-	if [ $2 = "." ]; then
-	    sudo nginx
-	    foreman start
-	#Migrate the project database
-	elif [ $2 = "migrate" ]; then
-	    rake db:migrate
-	#Remove and restart the database
-	elif [ $2 = "reset" ];then
-	    echo "Dropping Database...."
-	    rake db:drop --trace
-	    echo "Done"
-	    echo "====================="
-	    echo "Creating Database..."
-            rake db:create --trace
-	    echo "Done"
-            echo "====================="
-	    echo "Migrating for test..."
-	    rake db:migrate RAILS_ENV=test --trace
-	    echo "Done"
-            echo "====================="
-	    echo "Migrating development..."
-	    rake db:migrate --trace
-	    echo "Done"
-            echo "====================="
-	    echo "Seeding database..."
-	    rake db:seed --trace
-	    echo "Done"
-            echo "====================="
-	elif [ $2 = "production" ];then
-	    echo "Drop database"
-	    RAILS_ENV=production rake db:drop
-	    echo "Done"
-	    echo "Create database"
-	    RAILS_ENV=production rake db:create
-	    echo "Done"
-	    echo "Migrate database"
-	    RAILS_ENV=production rake db:migrate
-	    echo "Done"
-	    echo "Seed database"
-	    RAILS_ENV=production rake db:seed
-	    echo "Done"
-	    echo "Precompile Assets"
-	    RAILS_ENV=production rake assets:precompile
-	    echo "Done"
-	    echo "Launcing server"
-	    rails s -e production
-	    echo "Done"
-	elif [ $2 = "rspec" ];then
-	    if [ -z "$3" ];then
-		echo "Launching RSPEC"
-		rspec
-	    else
-		echo "Launching RSPEC with $3"
-		rspec $3
-	    fi
-	elif [ $2 = "pull" ];then
-	    echo "==== PULL 'bPanHQ' ===="
-	    echo "LOCAL GIT STATUS:"
-	    echo
-            git status
-	    echo
-	    read -p "Continue pull? (Yy): " -n 1 -r
-	    echo    # (optional) move to a new line
-	    if [[ $REPLY =~ ^[Yy]$ ]];then
-                git pull
-		BPULLRESULT=TRUE
-            else
-                echo "NO PULL"
-		BPULLRESULT=FALSE
-            fi
-	    echo
-	elif [ $2 = "push" ];then
-	    echo "==== PUSH 'bPlanHQ' ===="
-	    echo "PULL FIRST:"
-            echo
-	    . . pull
+    	#Launch Server
+    	if [ $2 = "." ]; then
+    	    sudo nginx
+    	    foreman start
+    	#Migrate the project database
+    	elif [ $2 = "migrate" ]; then
+    	    be rake db:migrate
+    	#Remove and restart the database
+    	elif [ $2 = "reset" ];then
+    	    echo "Dropping Database...."
+    	    be rake db:drop --trace
+    	    echo "Done"
+    	    echo "====================="
+    	    echo "Creating Database..."
+                be rake db:create --trace
+    	    echo "Done"
+                echo "====================="
+    	    echo "Migrating for test..."
+    	    be rake db:migrate RAILS_ENV=test --trace
+    	    echo "Done"
+                echo "====================="
+    	    echo "Migrating development..."
+    	    be rake db:migrate --trace
+    	    echo "Done"
+                echo "====================="
+    	    echo "Seeding database..."
+    	    be rake db:seed --trace
+    	    echo "Done"
+                echo "====================="
+    	elif [ $2 = "production" ];then
+    	    echo "Drop database"
+    	    be RAILS_ENV=production rake db:drop
+    	    echo "Done"
+    	    echo "Create database"
+    	    be RAILS_ENV=production rake db:create
+    	    echo "Done"
+    	    echo "Migrate database"
+    	    be RAILS_ENV=production rake db:migrate
+    	    echo "Done"
+    	    echo "Seed database"
+    	    be RAILS_ENV=production rake db:seed
+    	    echo "Done"
+    	    echo "Precompile Assets"
+    	    be RAILS_ENV=production rake assets:precompile
+    	    echo "Done"
+    	    echo "Launcing server"
+    	    be rails s -e production
+    	    echo "Done"
+    	elif [ $2 = "pull" ];then
+    	    echo "==== PULL 'bPanHQ' ===="
+    	    echo "LOCAL GIT STATUS:"
+    	    echo
+                git status
+    	    echo
+    	    read -p "Continue pull? (Yy): " -n 1 -r
+    	    echo    # (optional) move to a new line
+    	    if [[ $REPLY =~ ^[Yy]$ ]];then
+                    git pull
+    		BPULLRESULT=TRUE
+                else
+                    echo "NO PULL"
+    		BPULLRESULT=FALSE
+                fi
+    	    echo
+    	elif [ $2 = "push" ];then
+    	    echo "==== PUSH 'bPlanHQ' ===="
+    	    echo "PULL FIRST:"
+                echo
+    	    . . pull
 
-	    echo
-	    if [[ $BPULLRESULT = TRUE ]];then
-		echo "ADDING:"
-		git add . -A
-		read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
-		echo
-		git commit -m "$COMMITMESSAGE"
-		echo "PUSHING:"
-		echo
-		git push
-		echo
-		echo "DONE"
-		echo
-	    fi
-        elif [ $2 = "deploy" ];then
-	    git push live
-	    cap deploy
-        elif [ $2 = "deploy:migrate" ];then
-	    cap deploy:stop
-	    cap deploy:migrate
-	    cap deploy:start
-	fi
+    	    echo
+    	    if [[ $BPULLRESULT = TRUE ]];then
+    			echo "ADDING:"
+    			git add . -A
+    			read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
+    			echo
+    			git commit -m "$COMMITMESSAGE"
+    			echo "PUSHING:"
+    			echo
+    			git push
+    			echo
+    			echo "DONE"
+    			echo
+    	    fi
+        fi
     fi
 elif [ $1 = "start" ];then
     osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "Terminal" to do script ". . ." in selected tab of front window'
     sleep 10
     chrome "http://local.nature.com/"
 elif [ $1 = "rspec" ];then
-    bundle exec rspec
-elif [ $1 = "test" ];then
-	# Wipe the teminal buffer
-	osascript -e 'tell application "System Events" to keystroke "k" using command down'
-	
-    bundle exec rspec
+    be rspec
+
     SHORTCUTRSPECSTATUS=$?
-    bundle exec cucumber
-    SHORTCUTCUCUMBERSTATUS=$?
 
     red='\033[0;31m'
     green='\033[0;32m'
     cyan='\033[0;36m'
     NC='\033[0m' # No Color
+
+    CURRENTDIR=$(pwd)
 
     echo
     echo
@@ -134,7 +115,42 @@ elif [ $1 = "test" ];then
     echo "||--------------------||"
     echo "||      DIRECTORY     ||"
     echo "------------------------"
-    echo -e "${cyan}${pwd}${NC}"
+    echo -e "${cyan}${CURRENTDIR}${NC}"
+    echo "------------------------"
+    echo "||       RESULTS      ||"
+    echo "||--------------------||"
+    
+    # Write RSPEC status
+    if [[ $SHORTCUTRSPECSTATUS = 0 ]];then
+    	echo -e "|| RSPEC: ${green}PASSED${NC}      ||"
+    else
+    	echo -e "|| RSPEC: ${red}FAILED(${SHORTCUTRSPECSTATUS})${NC}   ||"
+    fi
+    echo "========================" 
+elif [ $1 = "test" ];then
+	# Wipe the teminal buffer
+	osascript -e 'tell application "System Events" to keystroke "k" using command down'
+	
+    be rspec
+    SHORTCUTRSPECSTATUS=$?
+    be cucumber
+    SHORTCUTCUCUMBERSTATUS=$?
+
+    red='\033[0;31m'
+    green='\033[0;32m'
+    cyan='\033[0;36m'
+    NC='\033[0m' # No Color
+
+    CURRENTDIR=$(pwd)
+
+    echo
+    echo
+    echo "========================"
+    echo "|| LAZY TEST RESULTS: ||"
+    echo "||--------------------||"
+    echo "||      DIRECTORY     ||"
+    echo "------------------------"
+    echo -e "${cyan}${CURRENTDIR}${NC}"
     echo "------------------------"
     echo "||       RESULTS      ||"
     echo "||--------------------||"
@@ -157,11 +173,9 @@ elif [ $1 = "test" ];then
 elif [ $1 = "save" ];then
     cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
     cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup
-    cp -v ~/.vimrc ~/Notes/backups/vimrc.backup
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
     cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
-    cp -v ~/Notes/backups/vimrc.backup ~/.vimrc
 elif [ $1 = "pull" ];then
     source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then
@@ -197,29 +211,29 @@ elif [ $1 = "showdown" ];then
     sudo shutdown -h now
 elif [ $1 = "nuke" ];then
     if [ $2 = "mysql" ]; then
-	echo "Nuking MySQL..."
-	brew uninstall mysql
-	sudo rm /usr/local/mysql
-	sudo rm -rf /usr/local/mysql*
-	sudo rm -rf /usr/local/var/mysql
-	sudo rm -rf /usr/local/var/mysql*
-	sudo rm -rf /Library/StartupItems/MySQLCOM
-	sudo rm -rf /Library/PreferencePanes/My*
-	sudo rm -rf /Library/Receipts/mysql*
-	sudo rm -rf /Library/Receipts/MySQL*
-	sudo rm -rf /var/db/receipts/com.mysql.*
-	echo "Done"
+    	echo "Nuking MySQL..."
+    	brew uninstall mysql
+    	sudo rm /usr/local/mysql
+    	sudo rm -rf /usr/local/mysql*
+    	sudo rm -rf /usr/local/var/mysql
+    	sudo rm -rf /usr/local/var/mysql*
+    	sudo rm -rf /Library/StartupItems/MySQLCOM
+    	sudo rm -rf /Library/PreferencePanes/My*
+    	sudo rm -rf /Library/Receipts/mysql*
+    	sudo rm -rf /Library/Receipts/MySQL*
+    	sudo rm -rf /var/db/receipts/com.mysql.*
+    	echo "Done"
         echo "====================="
-	echo "Re-building"
-	brew update
-	brew install mysql
-	unset TMPDIR
-	mkdir /usr/local/var/
-	mkdir /usr/local/var/mysql
-	mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
-	mysql.server start
-	mysqladmin -u root password ''
-	echo "Done"
+    	echo "Re-building"
+    	brew update
+    	brew install mysql
+    	unset TMPDIR
+    	mkdir /usr/local/var/
+    	mkdir /usr/local/var/mysql
+    	mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+    	mysql.server start
+    	mysqladmin -u root password ''
+    	echo "Done"
         echo "====================="
     fi
 fi

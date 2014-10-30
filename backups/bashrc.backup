@@ -14,6 +14,8 @@ shortcut() {
 }
 alias .=shortcut
 
+alias be='bundle exec'
+
 function extract()      # Handy Extract Program
 {
     if [ -f $1 ]; then

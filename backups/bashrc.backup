@@ -1,6 +1,6 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:~/bin
+export PATH=H$PATH:~/bin
 
 #Quick cd up
 alias ..='cd ..'
@@ -84,3 +84,6 @@ function chrome() {
         /usr/bin/open -a "/Applications/Google Chrome.app" "$@"
     fi
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

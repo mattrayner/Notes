@@ -1,14 +1,15 @@
 #!/bin/sh -x
 
 if [ $1 = "." ];then
-    cd ~/bPlanHQ/
+    cd ~/laserwolf/
 
     #Check to see if we are doing something with our project
     if (( $# >= 2 ))
     then
 	#Launch Server
 	if [ $2 = "." ]; then
-	    rails s
+	    sudo nginx
+	    foreman start
 	#Migrate the project database
 	elif [ $2 = "migrate" ]; then
 	    rake db:migrate
@@ -106,10 +107,53 @@ if [ $1 = "." ];then
 	    cap deploy:start
 	fi
     fi
-elif [ $1 = "plan" ];then
+elif [ $1 = "start" ];then
     osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "Terminal" to do script ". . ." in selected tab of front window'
-    sleep 5s
-    chrome "http://0.0.0.0:3344/"
+    sleep 10
+    chrome "http://local.nature.com/"
+elif [ $1 = "rspec" ];then
+    bundle exec rspec
+elif [ $1 = "test" ];then
+	# Wipe the teminal buffer
+	osascript -e 'tell application "System Events" to keystroke "k" using command down'
+	
+    bundle exec rspec
+    SHORTCUTRSPECSTATUS=$?
+    bundle exec cucumber
+    SHORTCUTCUCUMBERSTATUS=$?
+
+    red='\033[0;31m'
+    green='\033[0;32m'
+    cyan='\033[0;36m'
+    NC='\033[0m' # No Color
+
+    echo
+    echo
+    echo "========================"
+    echo "|| LAZY TEST RESULTS: ||"
+    echo "||--------------------||"
+    echo "||      DIRECTORY     ||"
+    echo "------------------------"
+    echo -e "${cyan}${pwd}${NC}"
+    echo "------------------------"
+    echo "||       RESULTS      ||"
+    echo "||--------------------||"
+    
+    # Write RSPEC status
+    if [[ $SHORTCUTRSPECSTATUS = 0 ]];then
+    	echo -e "|| RSPEC: ${green}PASSED${NC}      ||"
+    else
+    	echo -e "|| RSPEC: ${red}FAILED(${SHORTCUTRSPECSTATUS})${NC}   ||"
+    fi
+    
+    # Write CUCUMBER status
+    if [[ $SHORTCUTCUCUMBERSTATUS = 0 ]];then
+    	echo -e "|| CUCUMBER: ${green}PASSED${NC}   ||"
+    else
+    	echo -e "|| CUCUMBER: ${red}FAILED(${SHORTCUTCUCUMBERSTATUS})${NC}||"
+    fi
+    
+    echo "========================" 
 elif [ $1 = "save" ];then
     cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
     cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup

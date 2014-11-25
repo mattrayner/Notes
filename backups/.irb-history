@@ -1,0 +1,23 @@
+version
+body = open('http://192.168.88.212/mail/14-10-21/1')
+path = 'http://192.168.88.212/mail/14-10-21/1'
+require 'IO'
+require 'io/*'
+require 'io'
+require 'io/console'
+open(path) { |io| puts io.read }
+open('http://google.com')
+open("http://google.com")
+require 'uri'
+open(URI.parse("http://google.com"))
+URI.parse("http://google.com").open { |io| puts io.read }
+uri = URI.parse("http://google.com").open { |io| puts io.read
+uri = URI.parse("http://google.com")
+url.open { |io| puts io.read }
+uri.open { |io| puts io.read }
+puts uri.read
+Article.first
+Article.find()
+Article.find(1)
+Article
+exit

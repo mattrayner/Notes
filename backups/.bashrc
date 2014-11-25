@@ -17,6 +17,12 @@ shortcut() {
 }
 alias .=shortcut
 
+#EasyTester
+easy_tester() {
+    source ~/Desktop/easy_tester.sh
+}
+alias et=easy_tester
+
 alias be='bundle exec'
 
 function extract()      # Handy Extract Program

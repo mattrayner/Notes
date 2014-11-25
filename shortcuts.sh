@@ -176,11 +176,9 @@ elif [ $1 = "test" ];then
     
     echo "========================" 
 elif [ $1 = "save" ];then
-    cp -v ~/.bashrc ~/Notes/backups/bashrc.backup
-    cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup
+    cp -v ~/.* ~/Notes/backups/
 elif [ $1 = "restore" ];then
-    cp -v ~/Notes/backups/bashrc.backup ~/.bashrc
-    cp -v ~/Notes/backups/bash_profile.backup ~/.bash_profile
+    cp -v ~/Notes/backups/.* ~/
 elif [ $1 = "pull" ];then
     source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then
@@ -240,5 +238,18 @@ elif [ $1 = "nuke" ];then
     	mysqladmin -u root password ''
     	echo "Done"
         echo "====================="
+    fi
+elif [ $1 = "tapas" ];then
+    if (( $# >= 2 ))
+    then
+        if [ $2 = "config" ];then
+            ruby-tapas-downloader configure -e "npddevelopmentteam@macmillan.co.uk" -p "wat.2012" -d ~/RubyTapas
+        elif [ $2 = "setup" ]; then
+            gem install ruby-tapas-downloader
+            . tapas config
+            . tapas
+    	fi
+    else
+        ruby-tapas-downloader download
     fi
 fi

@@ -14,9 +14,9 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :w
-:wq
 :q!
 :ew
 :cp
@@ -46,12 +46,12 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
+""0	CHAR	0
 	{
-""1	LINE	0
-	    cp -v ~/Notes/backups/bash_ddprofile.backup ~/.bash_profile
+"1	LINE	0
+	
 "2	LINE	0
-	    cp -v ~/.bash_profile ~/Notes/backups/bash_profile.backup
+	
 "3	LINE	0
 	
 "4	LINE	0
@@ -70,20 +70,25 @@ $
 	{
 
 # File marks:
-'0  182  0  ~/Notes/shortcuts.sh
-'1  2  71  ~/web-applications-puppet/.git/COMMIT_EDITMSG
-'2  138  0  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
-'3  136  3  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
-'4  20  27  ~/.tmux.conf
-'5  2  23  ~/.tmux.conf
-'6  1  16  ~/.unbind
-'7  5  18  ~/web-applications-puppet/.git/COMMIT_EDITMSG
-'8  61  20  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
-'9  1  0  ~/web-applications-puppet/laserwolf/manifests/dependencies.pp
+'0  183  35  ~/Notes/shortcuts.sh
+'1  1564  0  ~/megafone-magento/supporting_files/front-end/sass/_mega_fone.scss
+'2  2  71  ~/web-applications-puppet/.git/COMMIT_EDITMSG
+'3  138  0  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
+'4  136  3  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
+'5  20  27  ~/.tmux.conf
+'6  2  23  ~/.tmux.conf
+'7  1  16  ~/.unbind
+'8  5  18  ~/web-applications-puppet/.git/COMMIT_EDITMSG
+'9  61  20  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
 
 # Jumplist (newest first):
--'  182  0  ~/Notes/shortcuts.sh
+-'  183  35  ~/Notes/shortcuts.sh
+-'  128  4  ~/Notes/shortcuts.sh
 -'  1  0  ~/Notes/shortcuts.sh
+-'  1564  0  ~/megafone-magento/supporting_files/front-end/sass/_mega_fone.scss
+-'  13  0  ~/megafone-magento/supporting_files/front-end/sass/_mega_fone.scss
+-'  10  0  ~/megafone-magento/supporting_files/front-end/sass
+-'  8  0  ~/megafone-magento
 -'  2  71  ~/web-applications-puppet/.git/COMMIT_EDITMSG
 -'  1  0  ~/web-applications-puppet/.git/COMMIT_EDITMSG
 -'  138  0  ~/web-applications-puppet/laserwolf/manifests/configuration.pp
@@ -163,7 +168,7 @@ $
 -'  451  0  ~/.vimrc
 -'  1  0  ~/vimrc
 -'  1  0  ~/vimr
--'  254  1  ~/Notes/shortcuts.sh
+-'  258  1  ~/Notes/shortcuts.sh
 -'  2  0  ~/laserwolf/.git/COMMIT_EDITMSG
 -'  1  0  ~/laserwolf/.git/COMMIT_EDITMSG
 -'  2  0  ~/laserwolf/.git/rebase-merge/git-rebase-todo
@@ -175,17 +180,13 @@ $
 -'  137  0  ~/Notes/shortcuts.sh
 -'  12  94  ~/.bashrc
 -'  26  20  ~/.bashrc
--'  187  0  ~/Notes/shortcuts.sh
--'  117  3  ~/Notes/shortcuts.sh
--'  110  17  ~/Notes/shortcuts.sh
--'  113  6  ~/Notes/shortcuts.sh
--'  11  14  ~/Notes/shortcuts.sh
 
 # History of marks within files (newest to oldest):
 
 > ~/Notes/shortcuts.sh
-	"	182	0
-	.	182	0
+	"	183	35
+	^	183	36
+	.	183	35
 	+	4	17
 	+	112	48
 	+	11	5
@@ -197,21 +198,26 @@ $
 	+	115	0
 	+	114	22
 	+	117	3
-	+	243	3
-	+	244	4
-	+	245	7
-	+	246	11
+	+	245	3
+	+	246	4
 	+	247	7
-	+	248	7
-	+	249	11
-	+	251	3
-	+	252	8
+	+	248	11
+	+	249	7
+	+	250	7
+	+	251	11
 	+	253	3
+	+	254	8
+	+	255	3
 	+	179	13
-	+	180	0
+	+	181	0
 	+	179	31
-	+	181	31
-	+	182	0
+	+	182	31
+	+	184	0
+	+	180	35
+	+	183	35
+
+> ~/megafone-magento/supporting_files/front-end/sass/_mega_fone.scss
+	"	1564	0
 
 > ~/web-applications-puppet/.git/COMMIT_EDITMSG
 	"	2	71

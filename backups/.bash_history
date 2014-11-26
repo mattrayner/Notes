@@ -1,72 +1,3 @@
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-be rspec spec/models/counter/counter_log_spec.rb 
-git rebase -i
-git rebase -i
-git rebase -i
-git log
-git rebase -i HEAD~2
-git status
-git status
-ping 8.8.8.8
-. . 
 bundle install
 logrotate
 git stats
@@ -498,3 +429,72 @@ exit
 vagrant ssh
 exit
 vi ~/.tmux.conf 
+ssh mrayner@test-digifps.nature.com
+cd ~/web-applications-puppet/
+close
+clear
+cd ~/web-applications-puppet/
+reset
+vim .
+vagrant destroy
+vagrant provision
+git commit -am
+git checkout master
+git stash
+git checkout master
+git pull
+git checkout "Add servergroup conditional to logrotate"
+git checkout "add-servergroup-conditional-to-logrotate
+
+"
+git checkout add-servergroup-conditional-to-logrotate
+git checkout -b add-servergroup-conditional-to-logrotate
+git stash list
+git stash pop 0
+git stash pop WIP on counter_log_logrotate
+git stash pop stash@{0}
+vim laserwolf/manifests/configuration.pp
+git add .
+git status
+git commit
+git push origin HEAD
+cd ~/megafone-magento/
+vim .
+vim .
+cd ~/megafone-magento/mega_fone/app/design/frontend/default/mega_fone/template/p
+cd ~/megafone-magento/mega_fone/app/design/frontend/default/mega_fone/template
+ll
+cd page
+ll
+clear
+ll
+cp 1column-corporate.phtml 1column-about.phtml
+cp 1column-corporate.phtml 1column-laptop.phtml 
+cp 1column-corporate.phtml 1column-unlocking.phtml
+cp 1column-corporate.phtml 1column-accessories.phtml
+. nts
+ll
+cd helper/
+ls
+cd ..
+ls
+vim shortcuts.sh 
+. save
+~/web-applications-puppet/
+cd ~/web-applications-puppet/
+vim .
+vim .
+vagrant destroy;
+vagrant up
+vagrant destroy;
+vim .
+vim .
+vagrant up
+vagrant ssh
+git add .
+git commit
+git push origin HEAD
+ssh test-digifps.nature.com
+ssh mrayner@test-digifps.nature.com
+tmux
+tmux

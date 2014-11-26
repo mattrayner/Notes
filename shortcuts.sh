@@ -177,8 +177,10 @@ elif [ $1 = "test" ];then
     echo "========================" 
 elif [ $1 = "save" ];then
     cp -v ~/.* ~/Notes/backups/
+    cp -v -r ~/.vim ~/Notes/backups/
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/.* ~/
+    cp -v -r ~/Notes/backups/.vim ~/
 elif [ $1 = "pull" ];then
     source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then

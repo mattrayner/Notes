@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/matt.rayner/web-applications-puppet/laserwolf'
+let g:netrw_dirhist_2='/Users/matt.rayner/web-applications-puppet/laserwolf/manifests'
+let g:netrw_dirhist_3='/Users/matt.rayner/megafone-magento'
+let g:netrw_dirhist_4='/Users/matt.rayner/megafone-magento/supporting_files'
+let g:netrw_dirhist_5='/Users/matt.rayner/megafone-magento/supporting_files/front-end'
+let g:netrw_dirhist_6='/Users/matt.rayner/megafone-magento/supporting_files/front-end/sass'

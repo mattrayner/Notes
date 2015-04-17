@@ -1,500 +1,500 @@
-bundle install
-logrotate
-git stats
 git status
-git log -p
-git rebase -i e524a3e216c7deb8684e0583bb7b466e26ae6344
-git log
-git log --stat
-git log -p
-features/support/vcr_cassettes/Marketing_site_visibility_after_journal_activation/
-ls features/support/vcr_cassettes/Marketing_site_visibi
-ls features/support/vcr_cassettes/Marketing_site_visibility_after_journal_activation/
-ls features/support/vcr_cassettes/Marketing_site_visibility_after_journal_activation/ -ll
-ls features/support/vcr_cassettes/Marketing_site_visibility_after_journal_activation/
-git checkout master -- features/support/vcr_cassettes/Marketing_site_visibility_after_journal_activation/Publishing_Managers_cannot_see_the_marketing_site_tab.yml 
+git reset --hard origin/develop
 git status
-git commit --amend
-git rebase --continue
-git loh
-git log
-git log -p
 git push -f origin HEAD
-ping 8.8.8.
-cd ~/Documents/compare/
-nano 1
-nano 2
-. NTS
-. nts
-subl shortcuts.sh 
-. tapas setup
-. tapas
-. tapas
-pry
-. .
-pry
-. tapas
-. tapas
-ruby-tapas-downloader download
-. tapas setup
-. tapas
-cd ~
+bundle install
 ls
-. tapas setup
-cd ~/Documents/compare/
-nano 3
-nano 4
-. tapas
-. tapas setup
-gem list
-. tapas
-ruby-tapas-downloader
-gem install ruby-tapas-downloader
-gem install ruby-tapas-downloader
-ruby-tapas-downloader
-gem list
-ruby-t
+git status
+git log
+git push -f origin HEAD
+git push -f origin HEAD
+git status
+git log
+git push -f origin HEAD
+git push -f origin HEAD
+git branch -D feature/issue-15_continuous-delivery
+git push -f origin HEAD
 . tapas
 bundle
-. update
-. tapas config
-gem list
-gem uninstall ruby-tapas-downloader
-. tapas setup
-gemset list
-ruby-tapas-downloader download
-. .
-cd ~
-sudo gem intall ruby-tapas-downloader
-sudo gem install ruby-tapas-downloader
-ruby-tapas-downloader
-. tapas config
-. tapas
-. tapas
-ssh mrayner@test-digifps.nature.com
-ping test-digifps.nature.com
-ping test-digifps.nature.com
-ping test-digifps.nature.com
-ssh mrayner@test-digifps.nature.com
-cd nts
-. nts
-subl shortcuts.sh 
-ping 8.8.8.
-ping 8.8.8.8
-ping 8.8.8.8
-. tapas
-sudo . tapas
-sudo ruby-tapas-downlo
-gem uninstall ruby-tapas-downloader
-gem uninstall ruby-tapas-downloader
-gem uninstall ruby-tapas-downloader
-gem install ruby-tapas-downloader
-ruby-tapas-downloader
-. config
-. tapas
-gemset
-gem
-gem list --local
-ruby-tapas
-ruby-tapas-download
-ruby-tapas-downloader
-gem list ruby-tapas-downloader
-sudo ruby-tapas-downloader
-sudo gem install ruby-tapas-downloader
-ruby-tapas-downloader
-. config
-. tapas config
-. tapas
-/Applications/Vagrant/bin/vagrant ; exit;
-vim colors solarized
-vim
-cd ~/bPla
-cd ~/bplanHQ/
+bundle
+ssh root@178.62.81.134
+cd ls
+cd .ssh
 ls
-cd spec
+ssh-copy-id -i ~/.ssh/id_rsa2.pub deployer@178.62.81.134
+ssh -v 'deployer@178.62.81.134'
+ssh-add -L
+ssh-add
+ssh-add ~/.ssh/id_rsa2
+ssh-add -L
+ssh -v 'deployer@178.62.81.134'
+ssh-add -L
+ssh -v 'deployer@178.62.81.134'
+ssh -v 'deployer@178.62.81.134'
+ssh-add -L
+ssh-copy-id -i ~/.ssh/id_rsa2.pub deployer@178.62.81.134
+ssh -v 'deployer@178.62.81.134'
+cat id_rsa2
+pdcopy id_rsa2
+pbcopy id_rsa2
+cd projects/mattrayner/
+be rspec
+be rspec
+be rspec
+be rspec
+be rspec
+be rspec
+pry
+be rails c
+cd ~/projects/mattrayner/
+be rails s
+be cap -T
+be cap -T
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development setup:imagemagick
+be cap development deploy
+be cap development deploy
+ssh-agent
+
+ssh-agent
+cd ~/projects/mattrayner/
+ssh-agent
+ssh-agent-l
+ssh-agent -L
+ssh-add
+ssh-add -L
+ssh-add ~/.ssh/id_rsa2
+ssh -v 'deployer@178.62.81.134'
+be cap -T
+be cap development deploy:cleanup
+be cap development deploy:cleanup
+rails g migration add_avatar_to_users avatar:string
+rm    db/migrate/20150311182807_add_avatar_to_users.rb
+rails g migration add_header_image_to_projects header_image:string
+ssh -v 'deployer@178.62.81.134'
+ssh -v 'root@178.62.81.134'
+exit
+ssh -v 'deployer@178.62.81.134'
+ssh -v 'root@178.62.81.134'
+exit
+. . 
+. . s
+exit
+. . .
+exit
+cd projects/mattrayner/
 ls
-cd helpers/
+git status
+got log
+git log
+git push -f origin HEAD
+git push -f origin HEAD
+git push -f origin HEAD
+ssh -p 64698 ubuntu@54.89.31.131
+CODECLIMATE_REPO_TOKEN=0f93684f2295e1112b21b5e525bd0117a9ccacbec70264caeffd31796e9fb1b8 bundle exec rake
+cd /Volumes/My\ Passport\ Essentials/
+cd Backups.backupdb/
+cd Matt\'s\ MacBook\ Air\ \(2\)/
+cd Latest
+ls
+cd Macintosh\ HD/User/
+cd Macintosh\ HD
+cd User
+cd Users
+ls
+cd matthewrayner/
+sudo chown matt.rayner Desktop
+sudo chmod -N ugo+rw 
+sudo chmod -N ugo+rw Desktop
+sudo chmod -N Desktop
+ll
+sudo chflags nouchg
+sudo chflags Desktop
+sudo chflags nouchg Desktop
+cd Desktop
+ls
+sudo chmod -N .
+sudo chmod -N *
+sudo chflags nouchg *
+ls
+ll
+ls
+cp Resume\ -\ Full\ Stack\ Rails/ ~/Desktop/
+cp -r Resume\ -\ Full\ Stack\ Rails/ ~/Desktop/
 ls
 cd ..
 ls
-cd models/
-ls
-cd checklist/
-ls
+ll
 cd ..
-pwd
-cd ..
-ks
+sudo chmod -R -N matthewrayner/
+sudo chflags -R nouchg matthewrayner/
+cd matthewrayner/
 ls
-cd controller
-cd ~
+ll
+cd Documents
 ls
-vim vimrc
-vim vimr
-vim vimrc
-source vimprc
-source vimrc
-vim
-mkdir ~/.vim/bundle/
-mkdir ~/.vim/
-mkdir ~/.vim/bundle/
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim ~/.vimrc
-rm vimrc
-source .vimrc
-vim ~/.vimrc
-source .vimrc
-vim ~/.vimrc
-source .vimrc
-rm .vimrc
-source .vimrc
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim ~/.vimrc
-vim
-vim ~/.vimrc
-source .vimrc
-vim ~/.vimrc
-vim
-vim ~/.vimrc
-source .vimrc
-vim +PluginInstall +qall
-vim
-
-vim +PluginInstall +qall
-vim ~/.vimrc
-vim +PluginInstall +qall
-vim ~/.vimrc
-cd ~/.vim/
+cd Desktop/k
 ls
-mkdir colors
+cd Desktop/
 ls
-cd colors
-vim solarized.vim
-cd ~/
+. . 
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+. . 
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
+cd projects/mattrayner/
+rails g migration add_gallery_images_to_projects gallery_images:json
+bundle install
+ssh -v 'root@178.62.81.134'
+cd ~/projects/
 ls
-mkdir solarized
+cd puppet-modules/
 ls
-cd solarized/
-git co git@github.com:altercation/vim-colors-solarized.git
-git clone git@github.com:altercation/vim-colors-solarized.git
-ls
-cd vim-colors-solarized/
-ls
-cd colors
-ls
-mv solarized.vim ~/.vim/colors/
-ls
-cd ~/,
-cd ~/.vim/colors/
-ls
-vim ~/.vimrc
-vim ~/.vimrc
-vim ~/.vimrc
-vim ~/.vimrc
-cd ~/solarized/
-mv vim-colors-solarized/ ~/.vim/bundle/
-mv vim-colors-solarized/ ~/.vim/bundle/vim-colors-solarized/
-vim ~/.vimrc 
-cd .vim/
-cd .vimrc/
-cd .vim
-ls
-cd ~/.vim
-ls
-cd bundle/
-ls
-vim
-vim +PluginInsall +qall
-vim +PluginInsall
-vim +:PluginInsall
-vim
-vim ~/.vimrc
-vim ~/.vimrc
-cd ~/laserwolf/
-ls
+vagrant up npp-dashboard.npgsrv.com
 vim .
-git st
-git status
-:Q
-:q
-brew install tmux
-vim ~/.tmux.conf
-tmux
-tmux attach -t 0
-which gem
-. tapas
-. tapas
-. tapas
-cd ~/web-applications-puppet/
-cat Vagrantfile 
-vagrant ssh
-vagrant ssh
-vagrant init nature/laserwolf
-ls
-vagrant up
-rm Vagrantfile 
-cd ~
-mkdir vagrant
-cd $
-cd $?
-cd $$
-cd vagrant/
-ls
-mkdir laserworlf
-cd laserwolf
-cd ~/web-applications-puppet/
-vagrant up
-vagrant up
-vagrant ssh
-vagrant ssh
-tmux
-rm ~/.vimrc
-cp ~/.vimrc.old 
-cp ~/.vimrc.old ~/.vimrc
-vim
-vim ~/.vimrc
-vim ~/.vimrc
-cp ~/.vimrc.old ~/.vimrc
-vim ~/.vimrc
-vim ~/.vimrc
-vim ~/.vimrc
-vim ~/.vimrc
-cd ~/laserwolf/
-ls
-cd app/models/counter_log.rb 
-vim app/models/counter_log.rb 
-:q
-exit
-cd web-applications-puppet/
-vagrant ssh
-vagrant ssh
-vargrant ssh
-vagrant ssh
-ls
-clear
-clear
-vim ~/.vimrc
-vim +:PLuginInstall
-vim +PluginInstall +qall
-:q
-vim
-cd ~/Dest
-cd ~/Desktop/
-vim test.rb
-vim test.rb
-vim test.rb
-mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-vim
-execute pathogen#infect()
-syntax on
-vim ~/.vimrc
-rm ~/.vim
-rm -R ~/.vim
-sudo rm -r ~/.vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-vim ~/.vimrc
-vim ~/.vimrc
-vim
-vim ~/.vimrc
-vim ~/.vimrc
-cd ~/Desktop/
-ruby test.rb
-vim test.rb
-vim ~/.vimrc
-vim test.rb
-vim test.rb
-ruby test.rb 
-:w
-:
-:Q
-cp ~/.vimrc ~/.vimrc.old
-vaim ~/.vimrc
-vim ~/.vimrc
-vim
-vim
-vim ~/.vimrc
-clear
-vim ~/.vimrc 
-vim
-vim ~/.vimrc 
-vim
-vim ~/.vimrc 
-cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-endwise.git
-vim
-cd ~/Desktop/
-vim test.rb
-git clone git://github.com/vim-ruby/vim-ruby.git ~/.vim/bundle/vim-ruby
-cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-endwise.git
-cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-rails.git
-git clone git://github.com/tpope/vim-bundler.git
-ssh test-www.nature.com
-ssh mrayner@test-www.nature.com
-cd web-applications-puppet/
-vagrant ssh
-vagrant up
-vagrant ssh
-vagrant ssh
-cd ~/web-applications-puppet/
-vagrant ssh
-. tapas
-cd ~/web-applications-puppet/
-vim .
-mvim .
-vim .
-git co -b counter_log_logrotate
-git checkout -b counter_log_logrotate
-sit status
-git status
-rm logrotate_stuff/
-rm -rf logrotate_stuff/
-git status
-git add .
-git status
-git commit
-git push origin HEAD
-
-
-man vagrant
-vagrant -gh
+vagrant up test-npp-util.npgsrv.com
+vagrant up test-npp-util.nature.com
+vagrant up test-npp-dashboards.nature.com
 vagrant destroy
-vagrant init
-vagrant provision
-vagrant up
+vagrant up npp-dashboards.nature.com
+vagrant up npp-dashboards.nature.com
+vagrant up npp-dashboards.npgsrv.com
+vagratn
+vagrant
+vagrant status
+vagrant up npp-dahboards.npgsrv.com
 vagrant destroy
-vagrant up
-vagrant provision
+vagrant up npp-dahboards.npgsrv.com
+vagrant up test-npp-util.nature.com
+cd ~/projects/dashboards/
+be dashing start -P ~/dashing.pid
+dashing --help
+dashing start -P
+binstubs dashing
+ls ~
+ll ~
+vagrant provision npp-dahboards.npgsrv.com
+vagrant provision npp-dahboards.npgsrv.com
+vagrant destroy npp-dahboards.npgsrv.com
+vagrant up npp-dahboards.npgsrv.com
+vagrant ssh 
+vagrant ssh npp-dahboards.npgsrv.com
+vagrant ssh npp-dahboards.npgsrv.com
+vagrant up npp-dahboards.npgsrv.com
+vagrant statys
+vagrant status
+vagrant up test-nagios.nature.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-j2ee.nature.com
+ssh mrayner@npp-dashboards.npgsrv.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-j2ee.nature.com
+cd projects/dashboards/
+ls
 git status
-vagrant destroy
-vagrant up
-git add .
-git commit
-git push origin HEAD
+bundle install
+bundle update
+dashing start -P ~/dashing.pid
+br dashing start -P ~/dashing.pid
+be dashing start -P ~/dashing.pid
+ bundle update dashnig
+ bundle update dashing
+nano Gemfile
+ bundle update dashing
+bundle install
+bundle update execjs
+nano Gemfile
+nano Gemfile.lock 
+rm Gemfile.lock 
+bundle install
+nano Gemfile
+bundle install
+be dashing start -P ~/dashing.pid
+be dashing start -P ~/dashing.pid
+be dashing start -P dashing.pid
+be dashing start -d -P dashing.pid
+ls
+killall dashing.pid 
+kill -Q dashing.pid 
+kill dashing.pid 
+kill $(cat dashing.pid)
+ls
+be dashing start -d -P dashing.pid
 git status
+git add README.md 
+git commit --amend
 git status
-git add .
+git log
+git push -f origin HEAD
+git status
+git add README.md 
 git commit --amend
 git push -f origin HEAD
-pwd
-rm laserwolf/manifests/.configuration.pp.swp
-git status
-git add .
-git add --all
-git status
-git add .
+git add README.md 
 git commit --amend
 git push -f origin HEAD
-vi laserwolf/files/counter_logs_logrotate.conf 
-git add .
-git commit --amend
-git push -f origin HEAD
-vi laserwolf/files/counter_logs_logrotate.conf 
-git add .
-git commit --amend
-git push -f origin HEAD
-vagrant ssh
-vi laserwolf/files/counter_logs_logrotate.conf 
-git add .
-git status
-git commit --amend
-git push -f origin HEAD
-vi laserwolf/files/counter_logs_logrotate.conf 
-vi laserwolf/files/counter_logs_logrotate.conf 
-git add .
-git commit
-vi laserwolf/files/counter_logs_logrotate.conf 
-git add .
-git commit
-git status
-git push -f origin HEAD
-cd we
-cd ~/web-applications-puppet/
-vagrant ssh
-vagrant ssh
-vagrant ssh
-vagrant ssh
-cd web-applications-puppet/
-vagrant init
-vagrant up
-vi ~/.unbind C-b
-vi ~/.tmux.conf
-vi ~/.tmux.conf
-tmux source-file ~/.tmux.conf
-exit
-ssh test-digifps.nature.com
-ssh mrayner@test-digifps.nature.com
-exit
-vagrant ssh
-exit
-vi ~/.tmux.conf 
-ssh mrayner@test-digifps.nature.com
-cd ~/web-applications-puppet/
-close
-clear
-cd ~/web-applications-puppet/
-reset
-vim .
-vagrant destroy
-vagrant provision
-git commit -am
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+ssh mrayner@test-npp-util.nature.com
+/etc/init.d/puppet restart
+ssh mrayner@test-npp-util.nature.com
+ssh npp-dashboards.nature.com
+ssh mrayner@npp-dashboards.nature.com
+ssh mrayner@npp-dashboards.npgsrv.com
+killall thin
+killall /thin
+killall /thin/
+sudo killall thin
+ssh mrayner@npp-dashboards.npgsrv.com
+ls dashboards/
+ls
+cd ~/projects/puppet-modules/
 git checkout master
-git stash
-git checkout master
+[23/03/2015 17:00:50] Darren Oakley: git pull
+[23/03/2015 17:00:58] Darren Oakley: git checkout test-puppet-dev
+[23/03/2015 17:01:00] Darren Oakley: git pull
+[23/03/2015 17:01:05] Darren Oakley: git merge master
+[23/03/2015 17:01:07] Darren Oakley: git pus
 git pull
-git checkout "Add servergroup conditional to logrotate"
-git checkout "add-servergroup-conditional-to-logrotate
-
-"
-git checkout add-servergroup-conditional-to-logrotate
-git checkout -b add-servergroup-conditional-to-logrotate
-git stash list
-git stash pop 0
-git stash pop WIP on counter_log_logrotate
-git stash pop stash@{0}
-vim laserwolf/manifests/configuration.pp
-git add .
+git checkout test-puppet-dev
+git stash
+git checkout test-puppet-dev
+git pull
+git merge master
+git push
+~/
+ls
+cd ~
+ls
+ bundle update dashnig
+ls
+cp config/application.sample.yml.erb config/application.yml.erb 
+be rake db:schema:load
+be rake db:migrate VERSION=0
+be rake db:drop && be rake db:create && be rake db:migrate
+et
+foreman start
+...
+. . .
+sudo reboot now
+be rspec spec/integration/journals/mosaic/meta_spec.rb
+be rake db:drop && be rake db:create && be rake:db:migrate && be rake db:seed && be rake db:test:prepare
+be rake db:drop && be rake db:create && be rake db:migrate && be rake db:seed && be rake db:test:prepare
+be rake db:drop && be rake db:create && be rake db:migrate && be rake db:seed && be rake db:test:prepare
+ssh deployer@178.62.81.134
+ssh-agent lisy
+ssh-agent list
+ssh-agent
+ssh-agent add
+ssh-agent -help
+ssh-add ~/.ssh/id_rsa2
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+ssh deployer@178.62.81.134
+cd ~/projects/rails_scratchpad/APIs/railscasts/#320\ -\ JBuilder/
+rails new jbuilder
+diskutil list
+diskutil list
+sudo dd if=/dev/disk4 of=~/Desktop/raspberrypi.dmg
+diskutil list
+diskutil unmountDisk /dev/disk4
+sudo newfs_msdos -F 16 /dev/disk4
+sudo dd if=~/Desktop/raspberrypi.dmg of=/dev/disk4
+curl -I github.com
+curl -I http://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+curl -I https://api.github.com
+cd Desktop/
+java -jar GameClient.jar 
+cd /Users/matt\.rayner/projects/mattrayner
+ssh mrayner@test-npp-util.nature.com
+cd Desktop/
+mkdir fitgem-sandbox
+cd fitgem-sandbox
+gem install fitgem
+curl https://gist.github.com/whazzmaster/5322902/raw/aa4293a9eb288d2096840a05b35a1ecf829defc1/.fitgem.yml > .fitgem.yml
+nano .fitgem.yml 
+curl https://gist.github.com/whazzmaster/5322902/raw/4439e2d577567d280856a2d77cef7b824a851cd1/test-fitgem.rb > test-fitgem.rb
+chmod +x test-fitgem.rb
+./test-fitgem.rb
+nano test-fitgem.rb 
+./test-fitgem.rb
+./test-fitgem.rb
+./test-fitgem.rb
+ls
+ll
+cat .fitgem.yml 
+cp .fitgem.yml ~/projects/mattrayner/
+subl test-fitgem.rb 
+sudo reboot
+bundle install
+be rails s
+be rails s
+. . .
+cd ~/projects/mattrayner/
+be rails s
+be rails s
+ssh-agent add ~/.ssh/id_rsa2
+ssh-add ~/.ssh/id_rsa2
+ssh deployer@dev.mattrayner.co.uk
+cap deploy development db:seed
+cd ~/projects/mattrayner/ && be cap deploy development db:seed
+cd ~/projects/mattrayner/ && be cap development deploy db:seed
+cd ~/projects/mattrayner/ && be cap -T
+ssh deploy@dev.mattrayner.co.uk
+ssh-add ~/.ssh/id_rsa2
+ssh deploy@dev.mattrayner.co.uk
+ssh deployer@dev.mattrayner.co.uk
+ssh deployer@dev.mattrayner.co.uk
+ssh deployer@dev.mattrayner.co.uk
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+be rubocop
+rubocop -RD
+be rubocop -RD
+bundle
+be rubocop -RD
+be rubocop
+be haml-lint
+be haml-lint .
+bundle
+cd ~/nature/laserwolf/
 git status
-git commit
 git push origin HEAD
-cd ~/megafone-magento/
-vim .
-vim .
-cd ~/megafone-magento/mega_fone/app/design/frontend/default/mega_fone/template/p
-cd ~/megafone-magento/mega_fone/app/design/frontend/default/mega_fone/template
-ll
-cd page
-ll
-clear
-ll
-cp 1column-corporate.phtml 1column-about.phtml
-cp 1column-corporate.phtml 1column-laptop.phtml 
-cp 1column-corporate.phtml 1column-unlocking.phtml
-cp 1column-corporate.phtml 1column-accessories.phtml
-. nts
-ll
-cd helper/
-ls
-cd ..
-ls
-vim shortcuts.sh 
-. save
-~/web-applications-puppet/
-cd ~/web-applications-puppet/
-vim .
-vim .
-vagrant destroy;
-vagrant up
-vagrant destroy;
-vim .
-vim .
-vagrant up
-vagrant ssh
-git add .
-git commit
-git push origin HEAD
-ssh test-digifps.nature.com
-ssh mrayner@test-digifps.nature.com
-tmux
-tmux
+cd nature/
+mkdir mosaic
+open
+finder .
+open .
+cd mosaic/
+nano .gitignore
+nano Gemfile
+nano mosaic.gemspec
+nano .rspec
+nano LICENSE.txt
+nano LICENSE.txt
+nano README.md
+nano Rakefile
+rspec
+bundle
+rspec
+rake
+git init
+rake
+be rake
+git remote add origin git@github.com:nature/mosaic.git
+rubocop
+be rubocop
+yard -i
+be yard
+irb
+be rspec
+be rspec
+exit
+sudo npm install -g phonegap
+cat ~/.ssh/id_rsa.pub | pbcopy

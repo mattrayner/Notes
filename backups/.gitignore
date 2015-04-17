@@ -1,0 +1,6 @@
+*.swo
+*.swp
+*.swn
+*.un~
+.idea/
+.DS_Store

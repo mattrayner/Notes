@@ -37,3 +37,5 @@ set formatoptions=n
 if exists("+colorcolumn")
 	set colorcolumn=80
 endif
+
+nmap tt :tabnew ./

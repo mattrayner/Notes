@@ -1,7 +1,7 @@
 #!/bin/sh -x
 
 if [ $1 = "." ];then
-    cd ~/laserwolf/
+    cd ~/nature/laserwolf/
 
     #Check to see if we are doing something with our project
     if (( $# >= 2 ))
@@ -9,8 +9,12 @@ if [ $1 = "." ];then
     	#Launch Server
     	if [ $2 = "." ]; then
     	    sudo nginx
+          . . shunter
     	    foreman start
-    	#Migrate the project database
+    	#Launch a rails server for foreman
+      elif [ $2 = "s" ]; then
+          be rails s -p 5000
+      #Migrate the project database
     	elif [ $2 = "migrate" ]; then
     	    be rake db:migrate
     	#Remove and restart the database
@@ -73,24 +77,45 @@ if [ $1 = "." ];then
     	elif [ $2 = "push" ];then
     	    echo "==== PUSH 'bPlanHQ' ===="
     	    echo "PULL FIRST:"
-                echo
+          echo
     	    . . pull
 
     	    echo
     	    if [[ $BPULLRESULT = TRUE ]];then
-    			echo "ADDING:"
-    			git add . -A
-    			read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
-    			echo
-    			git commit -m "$COMMITMESSAGE"
-    			echo "PUSHING:"
-    			echo
-    			git push
-    			echo
-    			echo "DONE"
-    			echo
+    			  echo "ADDING:"
+    			  git add . -A
+    			  read -p "COMMIT WITH MESSAGE: " COMMITMESSAGE
+    			  echo
+    			  git commit -m "$COMMITMESSAGE"
+    			  echo "PUSHING:"
+    			  echo
+    			  git push
+    			  echo
+    			  echo "DONE"
+    			  echo
     	    fi
-        fi
+      elif [ $2 = "shunter" ];then
+        echo "Updating Shunter:"
+        
+        for dir in `ls -d ~/nature/shunter*`
+        do
+          echo "=================="
+          echo "Updating:"
+          echo $dir
+          echo "------------------"
+          echo
+          cd $dir
+          git checkout master
+          git reset --hard origin/master
+          git pull origin master
+          npm install
+          echo
+          echo "Done $dir"
+          echo
+        done
+
+        . .
+      fi
     fi
 elif [ $1 = "start" ];then
     osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "Terminal" to do script ". . ." in selected tab of front window'
@@ -177,10 +202,8 @@ elif [ $1 = "test" ];then
     echo "========================" 
 elif [ $1 = "save" ];then
     cp -v ~/.* ~/Notes/backups/
-    cp -v -r ~/.vim ~/Notes/backups/
 elif [ $1 = "restore" ];then
     cp -v ~/Notes/backups/.* ~/
-    cp -v -r ~/Notes/backups/.vim ~/
 elif [ $1 = "pull" ];then
     source ~/Notes/helper/pull.sh
 elif [ $1 = "push" ];then
@@ -242,6 +265,8 @@ elif [ $1 = "nuke" ];then
         echo "====================="
     fi
 elif [ $1 = "tapas" ];then
+    CURRENTDIR=$(pwd)
+    cd ~
     if (( $# >= 2 ))
     then
         if [ $2 = "config" ];then
@@ -254,4 +279,5 @@ elif [ $1 = "tapas" ];then
     else
         ruby-tapas-downloader download
     fi
+    cd $CURRENTDIR
 fi

@@ -19,7 +19,7 @@ alias .=shortcut
 
 #EasyTester
 easy_tester() {
-    source ~/Desktop/easy_tester.sh
+    source ~/Notes/scripts/easy_tester.sh
 }
 alias et=easy_tester
 
@@ -96,5 +96,3 @@ function chrome() {
     fi
 }
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"

@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/matt.rayner/nature/shunter-laserwolf/view'
-let g:netrw_dirhist_2='/Users/matt.rayner/nature/shunter-laserwolf/view/journals'
-let g:netrw_dirhist_3='/Users/matt.rayner/projects/puppet-modules'
-let g:netrw_dirhist_4='/Users/matt.rayner/projects/puppet-modules/.git'

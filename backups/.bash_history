@@ -1,500 +1,500 @@
-git status
-git reset --hard origin/develop
-git status
-git push -f origin HEAD
-bundle install
+p
+git clone git@bitbucket.org:welovemobile-ondemand/tenth-avenue-touch-screen-kin2000.git
+cd tenth-avenue-touch-screen-kin2000/
+pstorm .
+p
+cd analytics.thisisbd.com/
+pstorm .
+p
+cd peugeot-208-peu2223-android-stripped/
+pstorm .
+cordova build android --release
+$JAVA_HOME
+$JAVA_HOME
+cardova build android --release
+cordova build android --release
+cordova run android --release
+android adb devices
+adb devices
+cordova run android --release
+cordova build android
+cordova run android --release
+cordova run android
+cordova run android
+cordova run android
+cordova run android --release
+cordova run android --release
+cd ~
+jvm list
+java -version
+cd /Library/Java/JavaVirtualMachines/
 ls
-git status
-git log
-git push -f origin HEAD
-git push -f origin HEAD
-git status
-git log
-git push -f origin HEAD
-git push -f origin HEAD
-git branch -D feature/issue-15_continuous-delivery
-git push -f origin HEAD
-. tapas
-bundle
-bundle
-ssh root@178.62.81.134
-cd ls
-cd .ssh
-ls
-ssh-copy-id -i ~/.ssh/id_rsa2.pub deployer@178.62.81.134
-ssh -v 'deployer@178.62.81.134'
-ssh-add -L
-ssh-add
-ssh-add ~/.ssh/id_rsa2
-ssh-add -L
-ssh -v 'deployer@178.62.81.134'
-ssh-add -L
-ssh -v 'deployer@178.62.81.134'
-ssh -v 'deployer@178.62.81.134'
-ssh-add -L
-ssh-copy-id -i ~/.ssh/id_rsa2.pub deployer@178.62.81.134
-ssh -v 'deployer@178.62.81.134'
-cat id_rsa2
-pdcopy id_rsa2
-pbcopy id_rsa2
-cd projects/mattrayner/
-be rspec
-be rspec
-be rspec
-be rspec
-be rspec
-be rspec
-pry
-be rails c
-cd ~/projects/mattrayner/
-be rails s
-be cap -T
-be cap -T
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development setup:imagemagick
-be cap development deploy
-be cap development deploy
-ssh-agent
+$JAVA_HOME
+nano ~/.bash_profile
+source ~/.bash_profile
+$JAVA_HOME
+abd devices
+android abd devices
+android abd list
+abd list
+adb list
+adb devices
+adb devices
+adb devices
+adb devices
+adb devices
+p
+git clone git@github.com:agamemnus/cordova-plugin-xapkreader.git
+rm cordova-plugin-xapkreader/
+rm -r cordova-plugin-xapkreader/
+y
+sudo rm -r cordova-plugin-xapkreader/
+cd cordova-plugins/
+git clone git@github.com:agamemnus/cordova-plugin-xapkreader.git
+cd cordova-plugin-xapkreader/
+git checkout cordova-5.0
+p
+cd peugeot-208-peu2223-android-stripped/
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader/
+cordova plugin add cordova-plugin-whitelist
+adb logcat
+E/AndroidProtocolHandler(31236): Unable to open content URL: content://com.bdnetwork.peugeot208/img/icons/arrow-down.png
+W/System.err(31236): java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.AssetFileDescriptor com.flyingsoftgames.xapkreader.XAPKZipResourceFile.getAssetFileDescriptor(java.lang.String)' on a null object reference
+W/System.err(31236): at com.flyingsoftgames.xapkreader.XAPKProvider.openAssetFile(XAPKProvider.java:113)
+W/System.err(31236): at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1502)
+W/System.err(31236): at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1568)
+W/System.err(31236): at android.content.ContentProvider$Transport.openTypedAssetFile(ContentProvider.java:391)
+W/System.err(31236): at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:1080)
+W/System.err(31236): at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:921)
+W/System.errW/Syste: at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:848)
+W/System.errW/Syste: at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:848)
+ 
+adb logcat
+logcat
 
-ssh-agent
-cd ~/projects/mattrayner/
-ssh-agent
-ssh-agent-l
-ssh-agent -L
-ssh-add
-ssh-add -L
-ssh-add ~/.ssh/id_rsa2
-ssh -v 'deployer@178.62.81.134'
-be cap -T
-be cap development deploy:cleanup
-be cap development deploy:cleanup
-rails g migration add_avatar_to_users avatar:string
-rm    db/migrate/20150311182807_add_avatar_to_users.rb
-rails g migration add_header_image_to_projects header_image:string
-ssh -v 'deployer@178.62.81.134'
-ssh -v 'root@178.62.81.134'
-exit
-ssh -v 'deployer@178.62.81.134'
-ssh -v 'root@178.62.81.134'
-exit
-. . 
-. . s
-exit
-. . .
-exit
-cd projects/mattrayner/
-ls
-git status
-got log
-git log
-git push -f origin HEAD
-git push -f origin HEAD
-git push -f origin HEAD
-ssh -p 64698 ubuntu@54.89.31.131
-CODECLIMATE_REPO_TOKEN=0f93684f2295e1112b21b5e525bd0117a9ccacbec70264caeffd31796e9fb1b8 bundle exec rake
-cd /Volumes/My\ Passport\ Essentials/
-cd Backups.backupdb/
-cd Matt\'s\ MacBook\ Air\ \(2\)/
-cd Latest
-ls
-cd Macintosh\ HD/User/
-cd Macintosh\ HD
-cd User
-cd Users
-ls
-cd matthewrayner/
-sudo chown matt.rayner Desktop
-sudo chmod -N ugo+rw 
-sudo chmod -N ugo+rw Desktop
-sudo chmod -N Desktop
-ll
-sudo chflags nouchg
-sudo chflags Desktop
-sudo chflags nouchg Desktop
-cd Desktop
-ls
-sudo chmod -N .
-sudo chmod -N *
-sudo chflags nouchg *
-ls
-ll
-ls
-cp Resume\ -\ Full\ Stack\ Rails/ ~/Desktop/
-cp -r Resume\ -\ Full\ Stack\ Rails/ ~/Desktop/
-ls
+cordova run android --release
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+P
+p
+cd tenth-avenue-touch-screen-kin2000/
+idea .
+cordova build android --releasre
+cordova build android --release
+p
+cd peugeot-208-peu2223-android-stripped/
+cordova build android --release
+cordova build android --release
+cordova build android --release
+cordova build android --release
+cordova build android --release
+cordova build android --release
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cd /Users/mrayner/projects/video-looper-mon2000 
+idea .
+cd ~
+cordova create ~/myproject com.myproject MyProject
+cd myproject/
+cordova playform add android
+cordova playtorm add android
+cordova platform add android
+mkdir funny
+cd funny
+open .
+zip -r0 zipfilename.zip main_extension
+zip -r0 expansion.zip funny
+zip -r0 expansion.zip funny/
 cd ..
-ls
-ll
+zip -r0 expansion.zip funny
+idea .
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+mv funny/ ~/funny
 cd ..
-sudo chmod -R -N matthewrayner/
-sudo chflags -R nouchg matthewrayner/
-cd matthewrayner/
+rm -r myproject/
+npm install -g cordova@4.0.0
+cordova create ~/myproject com.myproject MyProject
+cp funny/ ~/myproject/funny/
+cp funny/ ~/myproject/funny
+cp funny/ ~/myproject/
+cp ir funny/ ~/myproject/
+cp -r funny/ ~/myproject
+cd myproject/
 ls
-ll
-cd Documents
+mkdir funny
+mv hqdefault.jpg funny/cat.jpg
+zip -r0 expansion.zip funny
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+idea .
+git remove com.flyingsoftgames.xapkreader
+cordova plugin remove com.flyingsoftgames.xapkreader
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cd ..
+rm -r myproject/
+cordova create ~/myproject
+rm -r myproject/
+cordova create ~/myproject com.myproject MyProject
+cd myproject/
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cd ..
+cordova create ~/myproject2 com.myproject MyProject
+cd ~/myproject2/
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova platform add android
+rm -r myproject
+cordova create ~/myproject com.myproject MyProjec
+rm -r myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova plugin add cordova-plugin-googleplayservices
+cordova -version
+cordova plugin add cordova-plugin-googleplayservices
+cordova plugin add cordova-plugin-google-play-services
+cordova plugin add com.google.playservices
+p
+cd cordova-plugins/
 ls
-cd Desktop/k
-ls
-cd Desktop/
-ls
-. . 
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-. . 
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-be rspec /Users/matt.rayner/nature/laserwolf/spec/controllers/issues_controller_spec.rb
-cd projects/mattrayner/
-rails g migration add_gallery_images_to_projects gallery_images:json
-bundle install
-ssh -v 'root@178.62.81.134'
-cd ~/projects/
-ls
-cd puppet-modules/
-ls
-vagrant up npp-dashboard.npgsrv.com
-vim .
-vagrant up test-npp-util.npgsrv.com
-vagrant up test-npp-util.nature.com
-vagrant up test-npp-dashboards.nature.com
-vagrant destroy
-vagrant up npp-dashboards.nature.com
-vagrant up npp-dashboards.nature.com
-vagrant up npp-dashboards.npgsrv.com
-vagratn
-vagrant
-vagrant status
-vagrant up npp-dahboards.npgsrv.com
-vagrant destroy
-vagrant up npp-dahboards.npgsrv.com
-vagrant up test-npp-util.nature.com
-cd ~/projects/dashboards/
-be dashing start -P ~/dashing.pid
-dashing --help
-dashing start -P
-binstubs dashing
-ls ~
-ll ~
-vagrant provision npp-dahboards.npgsrv.com
-vagrant provision npp-dahboards.npgsrv.com
-vagrant destroy npp-dahboards.npgsrv.com
-vagrant up npp-dahboards.npgsrv.com
-vagrant ssh 
-vagrant ssh npp-dahboards.npgsrv.com
-vagrant ssh npp-dahboards.npgsrv.com
-vagrant up npp-dahboards.npgsrv.com
-vagrant statys
-vagrant status
-vagrant up test-nagios.nature.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-j2ee.nature.com
-ssh mrayner@npp-dashboards.npgsrv.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-j2ee.nature.com
-cd projects/dashboards/
-ls
-git status
-bundle install
-bundle update
-dashing start -P ~/dashing.pid
-br dashing start -P ~/dashing.pid
-be dashing start -P ~/dashing.pid
- bundle update dashnig
- bundle update dashing
-nano Gemfile
- bundle update dashing
-bundle install
-bundle update execjs
-nano Gemfile
-nano Gemfile.lock 
-rm Gemfile.lock 
-bundle install
-nano Gemfile
-bundle install
-be dashing start -P ~/dashing.pid
-be dashing start -P ~/dashing.pid
-be dashing start -P dashing.pid
-be dashing start -d -P dashing.pid
-ls
-killall dashing.pid 
-kill -Q dashing.pid 
-kill dashing.pid 
-kill $(cat dashing.pid)
-ls
-be dashing start -d -P dashing.pid
-git status
-git add README.md 
-git commit --amend
-git status
-git log
-git push -f origin HEAD
-git status
-git add README.md 
-git commit --amend
-git push -f origin HEAD
-git add README.md 
-git commit --amend
-git push -f origin HEAD
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-ssh mrayner@test-npp-util.nature.com
-/etc/init.d/puppet restart
-ssh mrayner@test-npp-util.nature.com
-ssh npp-dashboards.nature.com
-ssh mrayner@npp-dashboards.nature.com
-ssh mrayner@npp-dashboards.npgsrv.com
-killall thin
-killall /thin
-killall /thin/
-sudo killall thin
-ssh mrayner@npp-dashboards.npgsrv.com
-ls dashboards/
-ls
-cd ~/projects/puppet-modules/
+mv cordova-plugin-xapkreader/ cordova-plugin-xapkreader-cordova5/
+https://github.com/agamemnus/cordova-plugin-xapkreader/blob/gh-pages/plugin.xml
+git clone https://github.com/agamemnus/cordova-plugin-xapkreader/blob/gh-pages/plugin.xml
+git clone https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cd cordova-plugin-xapkreader
+idea .
 git checkout master
-[23/03/2015 17:00:50] Darren Oakley: git pull
-[23/03/2015 17:00:58] Darren Oakley: git checkout test-puppet-dev
-[23/03/2015 17:01:00] Darren Oakley: git pull
-[23/03/2015 17:01:05] Darren Oakley: git merge master
-[23/03/2015 17:01:07] Darren Oakley: git pus
-git pull
-git checkout test-puppet-dev
-git stash
-git checkout test-puppet-dev
-git pull
-git merge master
-git push
-~/
+idea .
+git checkout gh-pages
+p
+cd ~
+cd myproject
+cd ..
+rm -r myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
+cordova platform add android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cp ~/funny/ ~/myproject/funny/
+cp -r ~/funny ~/myproject/funny
 ls
+zip -r0 expansion.zip funny
+idea .
+p
+cd peugeot-208-peu2223-android-stripped/
+idea .
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+npm install -g cordova
+cordova run android
+cordova plugin rm com.google.playservices
+cordova plugin add cordova-plugin-googleplayservices
+cordova run android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova run android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova run android
+cordova run android
+zip -r0 main.1.com.bdnetwork.peugeot208.obb mainexpansion/
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+zip -r0 main.1.com.bdnetwork.peugeot208.obb mainexpansion/
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova build --release
+cordova build --release
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova plugin add cordova-plugin-whitelist
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cd ~/projects/cordova-plugins/cordova-plugin-xapkreader
+git pull
+cd ~/projects/peugeot-208-peu2223-android-stripped/
+cordova add plugin ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova run android
+cordova run android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova run android
+cordova run android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova --version
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova plugin add cordova-plugin-whitelist
+cordova run android
+cordova run android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova run android
+npm install cordove@4.3.0
+npm install cordova@4.3.0
+cordova platform remove android
+cordova platform add android
+cordova platform remove android
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova -version
+npm install -g cordova @4.3.0
+npm install -g cordova@4.3.0
+cordova -version
+ cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+cordova run android
+cordova run android
+cordova plugin remove com.google.playservices
+cordova plugin add com.google.playservices
+cordova playform remove android
+cordova platform remove android
+cordova plugin add com.google.playservices
+cordova platform add android
+cordova platform run android
+cordova run android
+cordova run android
+android
+cordova run android
+cordova run android
+cd ~/projects/
+cd ~/projects/cordova-plugins/cordova-plugin-xapkreader
+ls
+git checkout cordova-5.0
+git stash
+git checkout cordova-5.0
+git pull
+git reset HARD origin HEAD
+git reset --hard origin HEAD
+git reset --hard
+nano plugin.xml 
+nano plugin.xml 
+cd ~
+zip -r0 main.1.com.myproject.obb funny/
+cordova --version
+npm install cordova@4.3.0
+cordova platform remove android
+cordova create ~/myproject2 com.myproject MyProject
+rm -r myproject2
+cordova create ~/myproject2 com.myproject MyProject
+cd myproject2/
+ls
+cordova platform add android
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+p
+cd peugeot-208-peu2223-android-stripped/
+idea .
 cd ~
 ls
- bundle update dashnig
+cd myproject
+idea .
+cd ~
+rm -r ~/myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
+cordova -version
+cordova platform add android
+ cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+idea .
+idea .
+cd ..
+npm install -g cordova@4.0.0
+rm -r myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
 ls
-cp config/application.sample.yml.erb config/application.yml.erb 
-be rake db:schema:load
-be rake db:migrate VERSION=0
-be rake db:drop && be rake db:create && be rake db:migrate
-et
-foreman start
-...
-. . .
-sudo reboot now
-be rspec spec/integration/journals/mosaic/meta_spec.rb
-be rake db:drop && be rake db:create && be rake:db:migrate && be rake db:seed && be rake db:test:prepare
-be rake db:drop && be rake db:create && be rake db:migrate && be rake db:seed && be rake db:test:prepare
-be rake db:drop && be rake db:create && be rake db:migrate && be rake db:seed && be rake db:test:prepare
-ssh deployer@178.62.81.134
-ssh-agent lisy
-ssh-agent list
-ssh-agent
-ssh-agent add
-ssh-agent -help
-ssh-add ~/.ssh/id_rsa2
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-ssh deployer@178.62.81.134
-cd ~/projects/rails_scratchpad/APIs/railscasts/#320\ -\ JBuilder/
-rails new jbuilder
-diskutil list
-diskutil list
-sudo dd if=/dev/disk4 of=~/Desktop/raspberrypi.dmg
-diskutil list
-diskutil unmountDisk /dev/disk4
-sudo newfs_msdos -F 16 /dev/disk4
-sudo dd if=~/Desktop/raspberrypi.dmg of=/dev/disk4
-curl -I github.com
-curl -I http://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-curl -I https://api.github.com
-cd Desktop/
-java -jar GameClient.jar 
-cd /Users/matt\.rayner/projects/mattrayner
-ssh mrayner@test-npp-util.nature.com
-cd Desktop/
-mkdir fitgem-sandbox
-cd fitgem-sandbox
-gem install fitgem
-curl https://gist.github.com/whazzmaster/5322902/raw/aa4293a9eb288d2096840a05b35a1ecf829defc1/.fitgem.yml > .fitgem.yml
-nano .fitgem.yml 
-curl https://gist.github.com/whazzmaster/5322902/raw/4439e2d577567d280856a2d77cef7b824a851cd1/test-fitgem.rb > test-fitgem.rb
-chmod +x test-fitgem.rb
-./test-fitgem.rb
-nano test-fitgem.rb 
-./test-fitgem.rb
-./test-fitgem.rb
-./test-fitgem.rb
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+idea .
+cd ~
 ls
+rm -r myproject
+cordova create ~/myproject xom.myproject MyProject
+rm -r myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
+cordova platform add android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader.git
+nano plugins/android.json 
+nano platforms/android/project.properties 
+nano www/index.html 
+cordova run android
+cd ..
+rm -r myproject
+cordova create ~/myproject com.myproject MyProject
+cd myproject
+cordova platform add android
+cd my
+cordova plugin add ~/projects/cordova-plugins/cordova-plugin-xapkreader
+nano plugins/android.json 
+nano www/index.html 
+cordova run android
+nano platforms/android/project.properties 
+cordova run android
+cordova plugin add com.google.playlicensing
+cordova plugin add com.google.playservices
+cordova run android
+cd ..
+ls
+rm -r myproject
+npm install cordova@4.3.0
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader
+cordova plugin add https://github.com/agamemnus/cordova-plugin-whitelist
+zip -r0 main.1.com.bdnetwork.peugeot208.obb main_expansion/
+cordova run android
+cordova run android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-xapkreader
+cordova run android
+cordova run android
+rm main.1.com.bdnetwork.peugeot208.obb 
+zip -r0 main.1.com.bdnetwork.peugeot208.obb main_expansion/
+cordova run android
+cordova run android
+cordova plugin add https://github.com/agamemnus/cordova-plugin-whitelist
+cordova plugin add https://github.com/agamemnus/cordova-plugin-whitelist
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+cordova run android
+npm install -g cordova@5.0
+cordova run android
+cordova run android
+cordova run android
+zip -r0 main.zip main_expansion/
+cordova run android
+cordova run android
+zip -r0 main.zip main_expansion/
+cordova run android
+zip -r0 main.zip main_expansion/
+cordova run android
+git remote add origin git@bitbucket.org:mattrayner/peugeot208-expansion-reading.git
+git push -u origin --all # pushes up the repo and its refs for the first time
+git push -u origin --tags # pushes up any tags
+git clone p
+o
+p
+ls
+git@bitbucket.org:bd-digital/peugeot-208-app-peu2223.git
+git clone git@bitbucket.org:bd-digital/peugeot-208-app-peu2223.git
+cordova run ios
+cd peugeot-208-app-peu2223/
+cordova run ios --device
+cordova run ios
+idea .
+git clone
+git clone git@bitbucket.org:bd-digital/peugeot-208-peu2223-android-stripped.git
+cd peugeot208-android2/
+idea .
+cd ..
+rm -r peugeot208-android2/
+cd peugeot208-android2/
+idea .
+idea .
+idea .
+rm -r .idea
 ll
-cat .fitgem.yml 
-cp .fitgem.yml ~/projects/mattrayner/
-subl test-fitgem.rb 
-sudo reboot
-bundle install
-be rails s
-be rails s
-. . .
-cd ~/projects/mattrayner/
-be rails s
-be rails s
-ssh-agent add ~/.ssh/id_rsa2
-ssh-add ~/.ssh/id_rsa2
-ssh deployer@dev.mattrayner.co.uk
-cap deploy development db:seed
-cd ~/projects/mattrayner/ && be cap deploy development db:seed
-cd ~/projects/mattrayner/ && be cap development deploy db:seed
-cd ~/projects/mattrayner/ && be cap -T
-ssh deploy@dev.mattrayner.co.uk
-ssh-add ~/.ssh/id_rsa2
-ssh deploy@dev.mattrayner.co.uk
-ssh deployer@dev.mattrayner.co.uk
-ssh deployer@dev.mattrayner.co.uk
-ssh deployer@dev.mattrayner.co.uk
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-be rubocop
-rubocop -RD
-be rubocop -RD
-bundle
-be rubocop -RD
-be rubocop
-be haml-lint
-be haml-lint .
-bundle
-cd ~/nature/laserwolf/
-git status
-git push origin HEAD
-cd nature/
-mkdir mosaic
-open
-finder .
-open .
-cd mosaic/
-nano .gitignore
-nano Gemfile
-nano mosaic.gemspec
-nano .rspec
-nano LICENSE.txt
-nano LICENSE.txt
-nano README.md
-nano Rakefile
-rspec
-bundle
-rspec
-rake
-git init
-rake
-be rake
-git remote add origin git@github.com:nature/mosaic.git
-rubocop
-be rubocop
-yard -i
-be yard
-irb
-be rspec
-be rspec
-exit
-sudo npm install -g phonegap
-cat ~/.ssh/id_rsa.pub | pbcopy
+idea .
+idea .
+idea .
+idea .
+rm -r .idea/
+idea .
+p
+cd peugeot-208-app-peu2223/
+cordova build ios
+cordova build ios
+cordova run ios
+p
+cd cordova-plugins/
+git clone git@github.com:thisisbd/html10n-cordova-plugin.git
+cd html10n-cordova-plugin/
+idea .
+p
+git clone git@github.com:fabi1cazenave/webL10n.git
+cd web10n
+cd webL10n/
+idea .
+cd ..
+rm -r webL10n/
+y
+git clone git@github.com:mattrayner/webL10n.git
+cd webL10n/
+idea .
+idea .

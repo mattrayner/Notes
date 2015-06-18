@@ -2,6 +2,8 @@ alias ll="ls -lahG"
 
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
+[[ -s "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt" # Load our custom bash prompt
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 [[ -s ~/.bashrc ]] && source ~/.bashrc
@@ -32,11 +34,9 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-# Add some stuff for EE
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home"
-export PATH=$JAVA_HOME/bin:$PATH
-export MAVEN_OPTS="-XX:PermSize=256M -XX:MaxPermSize=512M -Xmx1024m"
-
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
+export PATH=$PATH:$JAVA_HOME

@@ -1,6 +1,9 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=H$PATH:~/bin
+export PATH=$PATH:~/bin
+export PATH=$PATH:/usr/local/bin
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 #Quick cd up
 alias ..='cd ..'
@@ -10,6 +13,8 @@ alias cls='clear'
 
 #Kill the terminal's buffer
 alias k="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
+
+alias p='cd ~/projects'
 
 #Execute our shortcuts file with parameters passed
 shortcut() {

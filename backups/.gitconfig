@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/matt.rayner/.gitignore
+	excludesfile = /Users/mrayner/.gitignore_global
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -11,7 +11,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 [user]
-	name = Matt Rayner
+	name = Matthew Rayner
 	email = mattrayner1@gmail.com
 [credential]
 	helper = osxkeychain
